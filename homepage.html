@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood.png" alt="Logo du header">
+        <img src="images/logo/ohmyfood@2x.svg" alt="Logo du header">
     </header>
 
     <main>
@@ -18,8 +18,8 @@
         <section class="presetation">
 
             <div class="location">
-                <i class="fa-solid fa-location-dot">
-                </i> <p>Paris,Belleville</p>
+                <i class="fa-solid fa-location-dot"></i> 
+                <p>Paris,Belleville</p>
             </div>
 
             
@@ -27,7 +27,9 @@
                 <p>Découvrer des restaurants d'exception, sélectionnés par nos soins</p>
 
                 <a href="#restaurants">
-                    <button>Explorer nos restaurants</button>
+                    <button class="violet-btn">
+                        <span>Explorer nos restaurants</span>
+                    </button>
                 </a>
 
         </section>
@@ -39,7 +41,7 @@
                     <h2>Fonctionnement</h2>
                 </li>
                 <li>
-                    <button class="btn btn-fcnt" type="submit">
+                    <button class="btn-fcnt" type="submit">
                         <span>1</span>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p>Choisissez le restaurant</p>
@@ -47,7 +49,7 @@
                 </li>
 
                 <li>
-                    <button class="btn btn-fcnt" type="submit">
+                    <button class="btn-fcnt" type="submit">
                         <span>2</span>
                         <i class="fa-solid fa-list"></i>
                         <p>Composez votre menu</p>
@@ -55,7 +57,7 @@
                 </li>
 
                 <li>
-                    <button class="btn btn-fcnt" type="submit">
+                    <button class="btn-fcnt" type="submit">
                         <span>3</span>
                         <i class="fa-solid fa-store"></i>
                         <p>Dégustez au restaurant</p>
@@ -66,16 +68,17 @@
         </section>
 
         <section class="restaurants">
-
+            
+            <!-- liste des cartes des restos -->
             <ul>
-
                 <li>
                     <h2 id="restaurants">Restaurants</h2>
                 </li>
 
                 <li>
                     <a href="la_palette_du_gout.html">
-                        <div class="card resto-card">
+                        <div class="resto-card">
+                            <!-- les img des nouveaux restos seront en background -->
                             <span>Nouveau</span>
                             <div class="restaurant_description">
                                 <div class="description">
@@ -90,7 +93,8 @@
 
                 <li>
                     <a href="la_note_enchantee.html">
-                        <div class="card resto-card">
+                        <div class="resto-card">
+                            <!-- les img des nouveaux restos seront en background -->
                             <span>Nouveau</span>
                             <div class="restaurant_description">
                                 <div class="description">
@@ -105,7 +109,7 @@
 
                 <li>
                     <a href="a_la_francaise.html">
-                        <div class="card resto-card">
+                        <div class="resto-card">
                             <div class="resto-card-img">
                                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
                             </div>
@@ -122,7 +126,7 @@
 
                 <li>
                     <a href="le_delice_des_sens.html">
-                        <div class="card resto-card">
+                        <div class="resto-card">
                             <div class="resto-card-img">
                                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                             </div>
@@ -136,10 +140,11 @@
                         </div>
                     </a>
                 </li>
-
             </ul>
+
         </section>
     </main>
+
 
     <footer>
 
@@ -149,27 +154,27 @@
             </li>
 
             <li>
-                <a href="#">
+                <a class="footer-link" href="#">
                     <i class="fa-solid fa-utensils"></i>
                     <p>Proposer un restaurant</p>
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a class="footer-link" href="#">
                     <i class="fa-solid fa-handshake-angle"></i>
                     <p>Devenir partenaire</p>
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a class="footer-link" href="#">
                     <p>Mention légales</p>
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a class="footer-link" href="#">
                     <p>Contact</p>
                 </a>
             </li>
