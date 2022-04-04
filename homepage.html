@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    
     <title>Ohmyfood</title>
 </head>
 
 <body>
     <header>
-        <img src="images/logo/ohmyfood@2x.svg" alt="Logo du header">
+        <img class="header--logo" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
     </header>
 
     <main>
@@ -18,127 +23,159 @@
         <section class="presetation">
 
             <div class="location">
-                <i class="fa-solid fa-location-dot"></i> 
-                <p>Paris,Belleville</p>
+                <i class="fa-solid fa-location-dot darkgrey"></i> 
+                <p class="location--text location--text_darkgrey">Paris,Belleville</p>
             </div>
-
             
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrer des restaurants d'exception, sélectionnés par nos soins</p>
+            <h1 class="presentation--title">Réservez le menu qui vous convient</h1>
+            <p class="presentation--paragraph">Découvrer des restaurants d'exception, sélectionnés par nos soins</p>
 
-                <a href="#restaurants">
-                    <button class="purple-btn">
-                        <span>Explorer nos restaurants</span>
-                    </button>
-                </a>
+            <a class="linkResto" href="#list-restaurants">
+                <button class="linkResto--button linkResto--button_purple ">
+                    <span class="spantext linkResto--spanText linkResto--spanText_white">Explorer nos restaurants</span>
+                </button>
+            </a>
 
         </section>
 
-        <section class="fonctionnement">
+        <section class="fctment">
 
+            <!-- liste de boutons pour la sectuion fontionnement  -->
             <ul>
+
                 <li>
-                    <h2>Fonctionnement</h2>
+                    <h2 class="section--heading">Fonctionnement</h2>
                 </li>
+
                 <li>
-                    <button class="btn-fcnt" type="submit">
-                        <span>1</span>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choisissez le restaurant</p>
+                    <button class="fctment--button fctment--button_purpleHover" type="submit">
+                        <span class="fctment--span fctment--span_purpleBckg">1</span>
+                        <i class="fa-solid fa-mobile-screen-button fctment--icon fctment--icon_purpleHover"></i>
+                        <p class="fctment--paragraph fctment--paragraph_regular400">Choisissez le restaurant</p>
                     </button>
                 </li>
 
                 <li>
-                    <button class="btn-fcnt" type="submit">
-                        <span>2</span>
-                        <i class="fa-solid fa-list"></i>
-                        <p>Composez votre menu</p>
+                    <button class="fctment--button fctment--button_purpleHover" type="submit">
+                        <span class="fctment--span fctment--span_purpleBckg">2</span>
+                        <i class="fa-solid fa-list-ul fctment--icon fctment--icon_purpleHover"></i>
+                        <p class="fctment--paragraph fctment--paragraph_regular400">Composer votre menu</p>
                     </button>
                 </li>
 
                 <li>
-                    <button class="btn-fcnt" type="submit">
-                        <span>3</span>
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </button>
+                    <button class="fctment--button fctment--button_purpleHover" type="submit">
+                        <span class="fctment--span fctment--span_purpleBckg">3</span>
+                        <i class="fa-solid fa-store fctment--icon fctment--icon_purpleHover"></i>
+                        <p class="fctment--paragraph fctment--paragraph_regular400">Dégustez au restaurant</p>
+                    </button>                    
                 </li>
+
             </ul>
 
         </section>
 
-        <section class="restaurants">
+        <section class="resto">
             
-            <!-- liste des cartes des restos -->
+            <!-- liste des cartes cliquables des restos menant la page de leur menu respectif -->
             <ul>
+
                 <li>
-                    <h2 id="restaurants">Restaurants</h2>
+                    <h2 class="section--heading" id="list-restaurants">Restaurants</h2>
                 </li>
 
                 <li>
-                    <a class="a_page-menu" href="la_palette_du_gout.html">
-                        <div class="card_new-resto">
-                            <!-- les img des nouveaux restos seront en background -->
-                            <span>Nouveau</span>
-                            <div class="restaurant_description">
-                                <div class="description">
-                                    <h3>La palette du goût</h3>
-                                    <p>Menilmontant</p>
+
+                    <a class="linkMenu" href="la_palette_du_gout.html">
+
+                        <div class="linkMenu--card">
+                            
+                            <div class="divImg">
+                                <img class="divImg--img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
+                                <span class="divImg--span  divImg--span_greenfloat">Nouveau</span>
+                            </div>
+
+                            <div class="cardCaption">
+                                <div class="divcaption">
+                                    <h3 class="divcaption--title">La palette du goût</h3>
+                                    <p class="divCation--paragraph" >Menilmontant</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
+
                     </a>
+
                 </li>
 
                 <li>
-                    <a class="a_page-menu" href="la_note_enchantee.html">
-                        <div class="card_new-resto">
-                            <!-- les img des nouveaux restos seront en background -->
-                            <span>Nouveau</span>
-                            <div class="restaurant_description">
-                                <div class="description">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
+                    
+                    <a class="linkMenu" href="la_note_enchantee.html">
+
+                        <div class="linkMenu--card">
+                            
+                            <div class="divImg">
+                                <img class="divImg--img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchanntée">
+                                <span class="divImg--span  divImg--span_greenfloat">Nouveau</span>
+                            </div>
+
+                            <div class="cardCaption">
+                                <div class="divcaption">
+                                    <h3 class="divcaption--title">La note enchantée</h3>
+                                    <p class="divCation--paragraph">Charonne</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
+
                     </a>
+
                 </li>
 
                 <li>
-                    <a class="a_page-menu" href="a_la_francaise.html">
-                        <div class="resto-card">
-                            <div class="resto-card-img">
-                                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                    
+                    <a class="linkMenu" href="a_la_francaise.html">
+
+                        <div class="linkMenu--card">
+                            
+                            <div class="divImg">
+                                <img class="divImg--img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                             </div>
-                            <div class="restaurant_description">
-                                <div class="description">
-                                    <h3> À la la française</h3>
-                                    <p>Cité Rouge</p>
+
+                            <div class="cardCaption">
+                                <div class="divcaption">
+                                    <h3 class="divcaption--title">À la française</h3>
+                                    <p class="divCation--paragraph">Cité rouge</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
+
                     </a>
+
                 </li>
 
                 <li>
-                    <a class="a_page-menu" href="le_delice_des_sens.html">
-                        <div class="resto-card">
-                            <div class="resto-card-img">
-                                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                    
+                    <a class="linkMenu" href="a_la_francaise.html">
+
+                        <div class="linkMenu--card">
+                            
+                            <div class="divImg">
+                                <img class="divImg--img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ÀLe délice des sens">
                             </div>
-                            <div class="restaurant_description">
-                                <div class="description">
-                                    <h3> Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
+
+                            <div class="cardCaption">
+                                <div class="divcaption">
+                                    <h3 class="divcaption--title">Le délice des sens</h3>
+                                    <p class="divCation--paragraph">Folie-Méricourt</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
+
                     </a>
+
                 </li>
             </ul>
 
@@ -150,36 +187,37 @@
 
         <ul>
             <li>
-                <img class="Logo_footer" src="images/logo/ohmyfood.png" alt="Logo footer">
+                <img class="footer--logo" src="images/logo/ohmyfood.png" alt="Logo footer">
             </li>
 
             <li>
-                <a class="footer-link" href="#">
-                    <i class="fa-solid fa-utensils"></i>
-                    <p>Proposer un restaurant</p>
+                <a class="footer--link" href="#">
+                    <i class="fa-solid fa-utensils footer--icon footer--icon_white"></i>
+                    <p class="footer--paragraph footer--paragraph_whiteRegular">Proposer un restaurant</p>
                 </a>
             </li>
 
             <li>
                 <a class="footer-link" href="#">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <p>Devenir partenaire</p>
+                    <i class="fa-solid fa-handshake-angle footer--icon footer--icon_white"></i>
+                    <p class="footer--paragraph footer--paragraph_whiteRegular"class="footer--paragraph footer--paragraph_whiteRegular">Devenir partenaire</p>
                 </a>
             </li>
 
             <li>
                 <a class="footer-link" href="#">
-                    <p>Mention légales</p>
+                    <p class="footer--paragraph footer--paragraph_whiteLight">Mention légales</p>
                 </a>
             </li>
 
             <li>
                 <a class="footer-link" href="#">
-                    <p>Contact</p>
+                    <p class="footer--paragraph footer--paragraph_whiteLight">Contact</p>
                 </a>
             </li>
 
         </ul>
+
     </footer>
 </body>
 </html>
