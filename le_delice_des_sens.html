@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="française">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,23 +18,19 @@
 </head>
 
 <body>
+
     <header> 
         
-        <header>
+        <a class="linkHomepage--button" href="homepage.html">
+            <i class="fa-solid fa-arrow-left linkHomepage--icon"></i>
+        </a>
 
-            <a class="linkHomepage" href="homepage.html">
-                <button class="linkHomepage--button ">
-                    <i class="fa-solid fa-arrow-left linkHomepage--icon"></i>
-                </button>
-            </a>
-
-            <img class="header--logo" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
-
-        </header>
+        <img class="header--logo" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
 
     </header>
 
     <main> 
+
         <div class="banner">
             <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt=" plat La palette du goût">
         </div>
@@ -51,138 +47,112 @@
             <ul class="dishlist">
                 <!-- puce pour les entrées -->
                 <li>
-                    <!-- liste des entrée -->
-                    <ul>
+                    <!-- section pour les entrées sous forme d'article -->
+                    <article>
 
-                        <li>
-                            <h2 class="dishlist--heading">ENTRÉES</h2>
-                        </li>
+                        <h2 class="dishlist--heading">ENTRÉES</h2>
 
-                        <!-- début de la liste des cartes -->
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Tartare de thon</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Assaisonné au yuzu</p>
-                                    <span class="price">25€</span>
-                                </div>
+                    <!-- carte des entrées par succession d' articles -->                       
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Tartare de thon</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Assaisonné au yuzu</p>
+                                <span class="price">25€</span>
                             </div>
-                        </li>
+                        </article>
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Bouchée de homard croustillant</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Et sa farandole de petits légumes</p>
-                                    <span class="price">35€</span>
-                                </div>
-                            </div>                           
-                        </li>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Bouchée de homard croustillant</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Et sa farandole de petits légumes</p>
+                                <span class="price">35€</span>
+                            </div>
+                        </article>                           
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Velouté de cèpes</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Aux truffes</p>
-                                    <span class="price">20€</span>
-                                </div>
-                            </div>                           
-                        </li>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Velouté de cèpes</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Aux truffes</p>
+                                <span class="price">20€</span>
+                            </div>
+                        </article>                           
 
-                    </ul>
+                    </article>
                 </li>
 
                 <!-- puce pour les plats -->
                 <li>
-                    <!-- liste des plats -->
-                    <ul>
+                    <!-- section pour les plats sous forme d'article -->
+                    <article>
                         
-                        <li>
-                            <h2 class="dishList--heading">PLATS</h2>
-                        </li>
+                        <h2 class="dishList--heading">PLATS</h2>
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Poulet rôti aux herbes de Provence</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Et sa crème de truffe</p>
-                                    <span class="price">40€</span>
-                                </div>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Poulet rôti aux herbes de Provence</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Et sa crème de truffe</p>
+                                <span class="price">40€</span>
                             </div>
-                        </li>
+                        </article>
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Langouste rôtie</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Et ses légumes de saison</p>
-                                    <span class="price">35€</span>
-                                </div>
-                            </div>                            
-                        </li>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Langouste rôtie</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Et ses légumes de saison</p>
+                                <span class="price">35€</span>
+                            </div>
+                        </article>                            
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Côte de boeuf Angus</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Et sa purée de panais</p>
-                                    <span class="price">44€</span>
-                                </div>
-                            </div>                           
-                        </li>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Côte de boeuf Angus</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Et sa purée de panais</p>
+                                <span class="price">44€</span>
+                            </div>
+                        </article>                           
 
-                    </ul>
+                    </article>
 
                 </li>
 
                 <!-- puce pour les désserts -->
                 <li>
-                    <!-- liste des desserts -->
-                    <ul>
+                    <!-- section des desserts sous forme d'article-->
+                    <article>
 
-                        <li>
-                            <h2 class="dishList--heading">DÉSSERTS</h2>
-                        </li>
+                        <h2 class="dishList--heading">DÉSSERTS</h2>
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Farandole de desserts</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Du chef</p>
-                                    <span class="price">18€</span>
-                                </div>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Farandole de desserts</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Du chef</p>
+                                <span class="price">18€</span>
                             </div>
-                        </li>
+                        </article>
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Crème brulée</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">Revisitée</p>
-                                    <span class="price">22€</span>
-                                </div>
-                            </div>                           
-                        </li>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Crème brulée</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">Revisitée</p>
+                                <span class="price">22€</span>
+                            </div>
+                        </article>                           
 
-                        <li>
-                            <div class="dishCard">
-                                <h3 class="dishcard--name">Tiramisu</h3>
-                                <div class="dishCard-detail">
-                                    <p class="discard--caption">À la noisette</p>
-                                    <span class="price">23€</span>
-                                </div>
-                            </div>                           
-                        </li>
+                        <article class="dishCard">
+                            <h3 class="dishcard--name">Tiramisu</h3>
+                            <div class="dishCard-detail">
+                                <p class="discard--caption">À la noisette</p>
+                                <span class="price">23€</span>
+                            </div>
+                        </article>                           
 
-                    </ul>
+                    </article>
 
                 </li>
             </ul>
 
-            <a class="link" href="#">
-                <button class="link--button link--button_purple " type="submit">
-                    <span class="spantext link--spanText link--spanText_white">Commander</span>
-                </button>
+            <a class="link--button link--button_purple" href="#">
+                <span class="spantext link--spanText link--spanText_white">Commander</span>
             </a>
 
         </section>
@@ -190,12 +160,10 @@
 
     <footer>
 
+        <h2>ohmyfood</h2>
+
         <ul>
             
-            <li>
-                <img class="footer--logo" src="images/logo/ohmyfood.png" alt="Logo footer">
-            </li>
-
             <li>
                 <a class="footer--link" href="#">
                     <i class="fa-solid fa-utensils footer--icon footer--icon_white"></i>
@@ -206,7 +174,7 @@
             <li>
                 <a class="footer-link" href="#">
                     <i class="fa-solid fa-handshake-angle footer--icon footer--icon_white"></i>
-                    <p class="footer--paragraph footer--paragraph_whiteRegular"class="footer--paragraph footer--paragraph_whiteRegular">Devenir partenaire</p>
+                    <p class="footer--paragraph footer--paragraph_whiteRegular">Devenir partenaire</p>
                 </a>
             </li>
 

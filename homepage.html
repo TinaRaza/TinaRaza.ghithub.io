@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="française">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,52 +22,48 @@
 
         <section class="presetation">
 
-            <div class="location">
-                <i class="fa-solid fa-location-dot darkgrey"></i> 
-                <p class="location--text location--text_darkgrey">Paris,Belleville</p>
-            </div>
+            <i class="fa-solid fa-location-dot darkgrey"></i> 
+            <form class="location">
+                <input class="darkgrey" type="text" name="ville" placeholder="Paris,Belleville">
+            </form>
             
-            <h1 class="presentation--title">Réservez le menu qui vous convient</h1>
+            <h1>Réservez le menu qui vous convient</h1>
             <p class="presentation--paragraph">Découvrer des restaurants d'exception, sélectionnés par nos soins</p>
 
-            <a class="linkResto" href="#list-restaurants">
-                <button class="linkResto--button linkResto--button_purple " type="submit">
-                    <span class="spantext linkResto--spanText linkResto--spanText_white">Explorer nos restaurants</span>
-                </button>
+            <a class="link--button link--button_purple" href="#list-restaurants">               
+                <span class="spantext link--spanText link--spanText_white">Explorer nos restaurants</span>
             </a>
 
         </section>
 
         <section class="fctment">
 
+            <h2 class="section--heading">Fonctionnement</h2>
+
             <!-- liste de boutons pour la sectuion fontionnement  -->
             <ul>
 
                 <li>
-                    <h2 class="section--heading">Fonctionnement</h2>
-                </li>
-
-                <li>
                     <button class="fctment--button fctment--button_purpleHover" type="submit">
-                        <span class="fctment--span fctment--span_purpleBckg">1</span>
+                        <span class="fctment--number fctment--number_purpleBckg">1</span>
                         <i class="fa-solid fa-mobile-screen-button fctment--icon fctment--icon_purpleHover"></i>
-                        <p class="fctment--paragraph fctment--paragraph_regular400">Choisissez le restaurant</p>
+                        <span class="fctment--text fctment--text_regular400">Choisissez le restaurant</span>
                     </button>
                 </li>
 
                 <li>
                     <button class="fctment--button fctment--button_purpleHover" type="submit">
-                        <span class="fctment--span fctment--span_purpleBckg">2</span>
+                        <span class="fctment--number fctment--number_purpleBckg">2</span>
                         <i class="fa-solid fa-list-ul fctment--icon fctment--icon_purpleHover"></i>
-                        <p class="fctment--paragraph fctment--paragraph_regular400">Composer votre menu</p>
+                        <span class="fctment--text fctment--text_regular400">Composer votre menu</span>
                     </button>
                 </li>
 
                 <li>
                     <button class="fctment--button fctment--button_purpleHover" type="submit">
-                        <span class="fctment--span fctment--span_purpleBckg">3</span>
+                        <span class="fctment--number fctment--number_purpleBckg">3</span>
                         <i class="fa-solid fa-store fctment--icon fctment--icon_purpleHover"></i>
-                        <p class="fctment--paragraph fctment--paragraph_regular400">Dégustez au restaurant</p>
+                        <span class="fctment--text fctment--text_regular400">Dégustez au restaurant</span>
                     </button>                    
                 </li>
 
@@ -76,33 +72,31 @@
         </section>
 
         <section class="resto">
-            
+
+            <h2 class="section--heading" id="list-restaurants">Restaurants</h2>
+
             <!-- liste des cartes cliquables des restos menant la page de leur menu respectif -->
             <ul>
-
-                <li>
-                    <h2 class="section--heading" id="list-restaurants">Restaurants</h2>
-                </li>
 
                 <li>
 
                     <a class="linkMenu" href="la_palette_du_gout.html">
 
-                        <div class="linkMenu--card">
+                        <article class="linkMenu--card">
                             
-                            <div class="divImg">
+                            <figure class="divImg">
                                 <img class="divImg--img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
                                 <span class="divImg--span  divImg--span_greenfloat">Nouveau</span>
-                            </div>
+                            </figure>
 
-                            <div class="cardCaption">
+                            <article class="cardCaption">
                                 <div class="divcaption">
                                     <h3 class="divcaption--title">La palette du goût</h3>
                                     <p class="divCation--paragraph" >Menilmontant</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
+                            </article>
+                        </article>
 
                     </a>
 
@@ -112,21 +106,21 @@
                     
                     <a class="linkMenu" href="la_note_enchantee.html">
 
-                        <div class="linkMenu--card">
+                        <article class="linkMenu--card">
                             
-                            <div class="divImg">
+                            <figure class="divImg">
                                 <img class="divImg--img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchanntée">
                                 <span class="divImg--span  divImg--span_greenfloat">Nouveau</span>
-                            </div>
+                            </figure>
 
-                            <div class="cardCaption">
+                            <article class="cardCaption">
                                 <div class="divcaption">
                                     <h3 class="divcaption--title">La note enchantée</h3>
                                     <p class="divCation--paragraph">Charonne</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
+                            </article>
+                        </article>
 
                     </a>
 
@@ -136,20 +130,20 @@
                     
                     <a class="linkMenu" href="a_la_francaise.html">
 
-                        <div class="linkMenu--card">
+                        <article class="linkMenu--card">
                             
-                            <div class="divImg">
+                            <figure class="divImg">
                                 <img class="divImg--img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-                            </div>
+                            </figure>
 
-                            <div class="cardCaption">
+                            <article class="cardCaption">
                                 <div class="divcaption">
                                     <h3 class="divcaption--title">À la française</h3>
                                     <p class="divCation--paragraph">Cité rouge</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
+                            </article>
+                        </article>
 
                     </a>
 
@@ -159,20 +153,20 @@
                     
                     <a class="linkMenu" href="a_la_francaise.html">
 
-                        <div class="linkMenu--card">
+                        <article class="linkMenu--card">
                             
-                            <div class="divImg">
-                                <img class="divImg--img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ÀLe délice des sens">
-                            </div>
+                            <figure class="divImg">
+                                <img class="divImg--img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                            </figure>
 
-                            <div class="cardCaption">
+                            <article class="cardCaption">
                                 <div class="divcaption">
                                     <h3 class="divcaption--title">Le délice des sens</h3>
                                     <p class="divCation--paragraph">Folie-Méricourt</p>
                                 </div>
                                 <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
+                            </article>
+                        </article>
 
                     </a>
 
@@ -185,10 +179,9 @@
 
     <footer>
 
+        <img class="footer--logo" src="images/logo/ohmyfood.png" alt="Logo footer">
+
         <ul>
-            <li>
-                <img class="footer--logo" src="images/logo/ohmyfood.png" alt="Logo footer">
-            </li>
 
             <li>
                 <a class="footer--link" href="#">
@@ -200,7 +193,7 @@
             <li>
                 <a class="footer-link" href="#">
                     <i class="fa-solid fa-handshake-angle footer--icon footer--icon_white"></i>
-                    <p class="footer--paragraph footer--paragraph_whiteRegular"class="footer--paragraph footer--paragraph_whiteRegular">Devenir partenaire</p>
+                    <p class="footer--paragraph footer--paragraph_whiteRegular">Devenir partenaire</p>
                 </a>
             </li>
 
