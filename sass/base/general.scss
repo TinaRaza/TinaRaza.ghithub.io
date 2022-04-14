@@ -1,0 +1,40 @@
+
+html{
+    font-size: 16px;
+}
+
+
+h1, h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}   
+
+
+h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p{
+    font-weight: 300;
+    line-height: 1.5
+}
+
+p.divCaption--p{
+    font-size: 18px;
+}
+
+p.footer--p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+span.spantext{
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
