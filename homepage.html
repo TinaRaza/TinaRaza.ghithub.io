@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="homepage--header">
         <img class="header--logo" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
     </header>
 
@@ -27,28 +27,32 @@
 
         <section class="presentation">
 
-            <i class="fa-solid fa-location-dot darkgrey"></i> 
-            <form class="location">
-                <input class="darkgrey" type="text" name="ville" placeholder="Paris,Belleville">
-            </form>
+            <div class="presentation--location">
+                <i class="fa-solid fa-location-dot darkgrey"></i> 
+                <form>
+                    <input class="darkgrey" type="text" name="ville" placeholder="Paris,Belleville">
+                </form>
+            </div>
             
-            <h1 class="homepage--title">Réservez le menu qui vous convient</h1>
+            <div class="presentation--heading">
+            <h1 class="presentation--title">Réservez le menu qui vous convient</h1>
             <p class="presentation--p">Découvrer des restaurants d'exception, sélectionnés par nos soins</p>
+            </div>
 
             <a class="link--button link--button_purple" href="#list-restaurants">               
                 <span class="spantext link--spanText link--spanText_white">Explorer nos restaurants</span>
             </a>
-
+            
         </section>
 
         <section class="fctment">
 
-            <h2 class="section--heading">Fonctionnement</h2>
+            <h2 class="heading homepage--heading">Fonctionnement</h2>
 
             <!-- liste de boutons pour la sectuion fontionnement  -->
-            <ul>
+            <ul class="fctment--ul">
 
-                <li>
+                <li class="fctment--li">
                     <button class="fctment--button fctment--button_purpleHover" type="submit">
                         <span class="spantext fctment--number fctment--number_purpleBckg">1</span>
                         <i class="fa-solid fa-mobile-screen-button fctment--icon fctment--icon_purpleHover"></i>
@@ -56,7 +60,7 @@
                     </button>
                 </li>
 
-                <li>
+                <li class="fctment--li">
                     <button class="fctment--button fctment--button_purpleHover" type="submit">
                         <span class="spantext fctment--number fctment--number_purpleBckg">2</span>
                         <i class="fa-solid fa-list-ul fctment--icon fctment--icon_purpleHover"></i>
@@ -64,7 +68,7 @@
                     </button>
                 </li>
 
-                <li>
+                <li class="fctment--li">
                     <button class="fctment--button fctment--button_purpleHover" type="submit">
                         <span class="spantext fctment--number fctment--number_purpleBckg">3</span>
                         <i class="fa-solid fa-store fctment--icon fctment--icon_purpleHover"></i>
@@ -78,12 +82,12 @@
 
         <section class="resto">
 
-            <h2 class="section--heading" id="list-restaurants">Restaurants</h2>
+            <h2 class="heading homepage--heading" id="list-restaurants">Restaurants</h2>
 
             <!-- liste des cartes cliquables des restos menant la page de leur menu respectif -->
-            <ul>
+            <ul class="resto-ul">
 
-                <li>
+                <li class="resto-li">
 
                     <a class="linkMenu" href="la_palette_du_gout.html">
 
@@ -107,7 +111,7 @@
 
                 </li>
 
-                <li>
+                <li class="resto-li">
                     
                     <a class="linkMenu" href="la_note_enchantee.html">
 
@@ -131,7 +135,7 @@
 
                 </li>
 
-                <li>
+                <li class="resto-li">
                     
                     <a class="linkMenu" href="a_la_francaise.html">
 
@@ -154,7 +158,7 @@
 
                 </li>
 
-                <li>
+                <li class="resto-li">
                     
                     <a class="linkMenu" href="a_la_francaise.html">
 
@@ -186,30 +190,30 @@
 
         <span class="footer--title">ohmyfood</span>
 
-        <ul>
+        <ul class="footer--ul">
 
-            <li>
+            <li class="footer--li">
                 <a class="footer--link" href="#">
                     <i class="fa-solid fa-utensils footer--icon footer--icon_white"></i>
                     <p class="footer--p footer--p_whiteRegular">Proposer un restaurant</p>
                 </a>
             </li>
 
-            <li>
+            <li  class="footer--li">
                 <a class="footer--link" href="#">
                     <i class="fa-solid fa-handshake-angle footer--icon footer--icon_white"></i>
                     <p class="footer--p footer--pa_whiteRegular">Devenir partenaire</p>
                 </a>
             </li>
 
-            <li>
+            <li class="footer--li">
                 <a class="footer--link" href="#">
                     <p class="footer--p footer--p_whiteLight">Mention légales</p>
                 </a>
             </li>
 
-            <li>
-                <a class="footer--link" href="#">
+            <li class="footer--li">
+                <a class="footer--link" href="mailto:#">
                     <p class="footer--p footer--p_whiteLight">Contact</p>
                 </a>
             </li>
