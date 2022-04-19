@@ -1,0 +1,64 @@
+// cartes pour les resto
+
+.linkMenu--card{
+    box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
+    -webkit-box-shadow: 6px 4px 7px -1px rgba(130,130,130,0.26);
+    -moz-box-shadow: 6px 4px 7px -1px rgba(130,130,130,0.26);
+    
+    border-radius: 20px;
+
+    height: 240px;
+
+    .divImg{
+        position: relative;
+        width: 100%;
+        height: 70%;
+
+        .divImg--img{
+            border-radius: 20px 20px 0 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .divImg--span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 70%;
+            left: 70%;
+            
+        
+            border-radius: 2px;
+            height: 15%;
+            width: 26%;
+            
+            font-size: 14px;
+            font-weight: 500;
+            background-color: #99E2D0;
+            color: #466860;            
+        }
+    }
+
+    .cardCaption{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        padding: 4%;
+        border-radius: 0 0 20px 20px;
+
+        background-color: white;
+
+        .divcaption--title{
+            margin-bottom: 2%;
+        }
+
+    .fa-heart{
+        margin-right: 4%; 
+    }
+
+    }
+
+}

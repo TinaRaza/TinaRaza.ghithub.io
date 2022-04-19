@@ -1,0 +1,21 @@
+.menu{
+    border-radius: 40px 40px 0 0;
+}
+
+.menu--main, .menu{
+    background-color: rgb(240, 240, 240);
+}
+
+.dishlist--heading{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+        &::after{
+            content: "___";
+            justify-content: flex-end;
+            font-size: 40px;
+            font-weight: 400;
+            color: #99E2D0;
+        }
+}
+

@@ -1,0 +1,27 @@
+.dishCard{
+    padding: 4% 6% 4% 4%;
+    border-radius: 18px;
+    background-color: white;
+    
+
+    .dishCard--name{
+        margin-bottom: 3px;
+        font-size: 16px;
+
+    }
+
+    .dishCard--detail{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+
+        font-size: 14px;
+
+        .price{
+            font-weight: 600;
+        }
+    }
+
+
+        
+}
