@@ -1,0 +1,31 @@
+.menu{
+    position: relative;
+    bottom: 70px;
+
+    padding: 8% 4% 10% 4%;
+}
+
+.menu--heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7%;
+    padding-right: 20px;
+    }
+
+.dishlist--li, .dishlist--heading {
+    margin-bottom: 5%; 
+}
+
+.dishCard{
+    margin-bottom: 4%; 
+}
+
+.menu .link--button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 15%;
+    }
+

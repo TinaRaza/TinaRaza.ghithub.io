@@ -1,0 +1,41 @@
+footer{
+    padding: 5% 4% 10% 4%;
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+
+.footer--title{
+    display: block;
+    padding-bottom: 20px;  
+    font-weight: 500;
+    
+}
+
+.footer--li{
+    margin-bottom: 1%;
+
+    .footer--link{
+    display: flex;
+    align-items: center;
+    }
+    
+    .footer--p{
+        font-weight: 500;
+    }
+
+    .fa-utensils{
+    font-size: 14px;
+    margin-right: 14px
+    }
+
+    .fa-handshake-angle{
+    font-size: 12px;
+    margin-right: 11px;
+    }   
+}
+
+
+// style du footer car commun à tous 
+
+
+

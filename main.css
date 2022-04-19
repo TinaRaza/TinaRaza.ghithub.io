@@ -75,13 +75,12 @@ html {
 }
 
 h1, h2 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 }
 
@@ -90,17 +89,8 @@ p {
   line-height: 1.5;
 }
 
-p.divCaption--p {
-  font-size: 18px;
-}
-
-p.footer--p {
-  font-weight: 400;
-  font-size: 14px;
-}
-
-span.spantext {
-  font-weight: 600;
+span {
+  font-weight: 500;
 }
 
 a {
@@ -108,8 +98,253 @@ a {
   color: inherit;
 }
 
-.link--spanText_white, .fctment--number, .footer--title, .footer--link {
+.linkMenu--card {
+  box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
+  -webkit-box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
+  -moz-box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
+  border-radius: 20px;
+  height: 240px;
+}
+.linkMenu--card .divImg {
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+.linkMenu--card .divImg .divImg--img {
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.linkMenu--card .divImg .divImg--span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 70%;
+  left: 70%;
+  border-radius: 2px;
+  height: 15%;
+  width: 26%;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #466860;
+}
+.linkMenu--card .cardCaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  padding: 4%;
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+}
+.linkMenu--card .cardCaption .divcaption--title {
+  margin-bottom: 2%;
+}
+.linkMenu--card .cardCaption .fa-heart {
+  margin-right: 4%;
+}
+
+.dishCard {
+  padding: 4% 6% 4% 4%;
+  border-radius: 18px;
+  background-color: white;
+}
+.dishCard .dishCard--name {
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+.dishCard .dishCard--detail {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-size: 14px;
+}
+.dishCard .dishCard--detail .price {
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+
+.header--logo {
+  margin: auto;
+}
+
+.linkHomepage--icon {
+  font-size: 30px;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 15%;
+}
+
+.presentation--location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+
+.presentation--heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10% 0;
+}
+
+.presentation--title {
+  margin-bottom: 3%;
+  padding: 0 15%;
+}
+
+.presentation--p {
+  padding: 0 30px;
+}
+
+.fctment {
+  padding: 12% 3%;
+}
+
+.homepage--heading {
+  margin-bottom: 7%;
+}
+
+.fctment--ul {
+  margin-left: 4%;
+}
+
+.fctment--li {
+  margin-bottom: 4%;
+}
+
+.resto {
+  padding: 12% 4%;
+}
+
+.homepage--heading {
+  margin-bottom: 8%;
+}
+
+.resto-li {
+  margin-bottom: 5%;
+}
+
+footer {
+  padding: 5% 4% 10% 4%;
+  background-color: rgb(51, 49, 49);
   color: white;
+}
+
+.footer--title {
+  display: block;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.footer--li {
+  margin-bottom: 1%;
+}
+.footer--li .footer--link {
+  display: flex;
+  align-items: center;
+}
+.footer--li .footer--p {
+  font-weight: 500;
+}
+.footer--li .fa-utensils {
+  font-size: 14px;
+  margin-right: 14px;
+}
+.footer--li .fa-handshake-angle {
+  font-size: 12px;
+  margin-right: 11px;
+}
+
+.menu {
+  position: relative;
+  bottom: 70px;
+  padding: 8% 4% 10% 4%;
+}
+
+.menu--heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7%;
+  padding-right: 20px;
+}
+
+.dishlist--li, .dishlist--heading {
+  margin-bottom: 5%;
+}
+
+.dishCard {
+  margin-bottom: 4%;
+}
+
+.menu .link--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.presentation {
+  background-color: rgb(240, 240, 240);
+}
+
+.presentation--location {
+  box-shadow: 9px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
+  -webkit-box-shadow: 9px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
+  -moz-box-shadow: 9px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
+  background-color: rgba(206, 206, 206, 0.408);
+}
+
+.resto {
+  background-color: rgb(240, 240, 240);
+}
+
+h1.presentation--title, h2.homepage--heading {
+  font-weight: 600;
+}
+
+.presentation--p {
+  font-size: 18px;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+}
+
+.menu--main, .menu {
+  background-color: rgb(240, 240, 240);
+}
+
+.dishlist--heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.dishlist--heading::after {
+  content: "___";
+  justify-content: flex-end;
+  font-size: 40px;
+  font-weight: 400;
+  color: #99E2D0;
 }
 
 /*# sourceMappingURL=main.css.map */

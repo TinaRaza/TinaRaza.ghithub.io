@@ -1,4 +1,26 @@
+
+
+
+// INITIALISER LES PORPRIETES GENRALE 
 @use "base/reset.scss";
 @use "base/typography.scss";
 @use "base/general.scss";
-@use "base/style.scss";
+
+
+@use "components/restau-cards.scss";
+@use "components/menu-cards.scss";
+
+// POSITIONNEMENT AVEC FLEXBOX 
+
+@use "layout/header.scss";
+@use "layout/presentation.scss";
+@use "layout/fonctionnement.scss";
+@use "layout/restaurants.scss";
+@use "layout/footer.scss";
+@use "layout/menu.scss";
+
+
+// style spécifique propre à chaque page
+
+@use "pages/style-homepage.scss";
+@use "pages/style-menu.scss";
