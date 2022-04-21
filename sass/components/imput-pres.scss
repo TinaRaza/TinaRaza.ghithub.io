@@ -1,0 +1,42 @@
+.fa-location-dot{
+    font-size: 18px;
+    color: rgb(62, 62, 62);
+}
+
+input{
+    width: 150px;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+    font-size: 16px;
+
+}
+
+input::placeholder{   
+    text-align: center;
+    font-weight: 500;
+    color: rgb(62, 62, 62);
+}
+
+@media screen and (min-width:672px){
+    .fa-location-dot{
+        font-size: 20px;
+    }
+    
+    input{
+        width: 180px;
+        font-size: 18px;
+    
+    }
+}
+
+@media screen and (min-width:992px){
+    .fa-location-dot{
+        font-size: 22px;
+    }
+    
+    input{
+        width: 200px;
+        font-size: 22px;
+    }
+}

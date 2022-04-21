@@ -1,6 +1,5 @@
 
 
-
 // INITIALISER LES PORPRIETES GENRALE 
 @use "base/reset.scss";
 @use "base/typography.scss";
@@ -9,6 +8,9 @@
 
 @use "components/restau-cards.scss";
 @use "components/menu-cards.scss";
+@use "components/btn-fctment.scss";
+@use "components/btn-purple.scss";
+@use "components/imput-pres.scss";
 
 // POSITIONNEMENT AVEC FLEXBOX 
 

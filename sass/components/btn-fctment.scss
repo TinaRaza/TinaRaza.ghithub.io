@@ -20,11 +20,15 @@
         font-weight: 600;
 
         &.fctment--number{
-            font-weight: 500;
             position: absolute;
             right: 89%;
             padding: 5px 10px;
             border-radius: 20px;
+            
+            font-size: 14px;
+            font-weight: 500;
+            
+            
             background-color: #9356DC;
             color: white;
         }

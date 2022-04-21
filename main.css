@@ -98,6 +98,36 @@ a {
   color: inherit;
 }
 
+@media screen and (min-width: 672px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1, h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+}
 .linkMenu--card {
   box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
   -webkit-box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
@@ -121,7 +151,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 70%;
+  bottom: 77%;
   left: 70%;
   border-radius: 2px;
   height: 15%;
@@ -166,21 +196,169 @@ a {
   font-weight: 600;
 }
 
+.fctment--button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+  height: 70px;
+  width: 100%;
+  font-size: 18px;
+  font-family: inherit;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px 1px rgba(198, 190, 190, 0.4);
+  -webkit-box-shadow: 1px 3px 5px 1px rgba(198, 190, 190, 0.4);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(198, 190, 190, 0.4);
+}
+.fctment--button span {
+  font-weight: 600;
+}
+.fctment--button span.fctment--number {
+  position: absolute;
+  right: 89%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #9356DC;
+  color: white;
+}
+.fctment--button span.fctment--text {
+  margin-left: 7%;
+}
+.fctment--button i {
+  color: grey;
+  margin-left: 10%;
+}
+.fctment--button i:hover {
+  color: #9356DC;
+}
+
+.fctment--button:hover {
+  background: rgba(226, 207, 251, 0.3607843137);
+  box-shadow: 1px 3px 5px 1px rgba(198, 190, 190, 0.8);
+  -webkit-box-shadow: 1px 3px 5px 1px rgba(198, 190, 190, 0.8);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(198, 190, 190, 0.8);
+}
+.fctment--button:hover > .fctment--icon {
+  color: #9356DC;
+}
+
+.link--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 4%;
+  color: white;
+  background: linear-gradient(0deg, rgb(168, 120, 224) 0%, rgb(255, 121, 218) 100%);
+  border-radius: 30px;
+  box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
+  -webkit-box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
+  -moz-box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
+}
+.link--button span {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 672px) {
+  .link--button {
+    width: 300px;
+    border-radius: 50px;
+  }
+  .link--button span {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 992px) {
+  .link--button {
+    width: 30%;
+    padding: 2%;
+    border-radius: 100px;
+  }
+  .link--button span {
+    font-size: 25px;
+  }
+}
+.fa-location-dot {
+  font-size: 18px;
+  color: rgb(62, 62, 62);
+}
+
+input {
+  width: 150px;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+  font-size: 16px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
+}
+
+@media screen and (min-width: 672px) {
+  .fa-location-dot {
+    font-size: 20px;
+  }
+
+  input {
+    width: 180px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fa-location-dot {
+    font-size: 22px;
+  }
+
+  input {
+    width: 200px;
+    font-size: 22px;
+  }
+}
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65px;
+  padding: 4%;
 }
 
 .header--logo {
   margin: auto;
+  width: 160px;
 }
 
 .linkHomepage--icon {
-  font-size: 30px;
+  font-size: 20px;
 }
 
+@media screen and (min-width: 672px) {
+  header {
+    padding: 2% 4%;
+  }
+
+  .header--logo {
+    width: 240px;
+  }
+
+  .linkHomepage--icon {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header--logo {
+    width: 280px;
+  }
+
+  .linkHomepage--icon {
+    font-size: 40px;
+  }
+}
 .presentation {
   display: flex;
   align-items: center;
@@ -195,6 +373,9 @@ header {
   justify-content: center;
   width: 100%;
   height: 50px;
+}
+.presentation--location input {
+  margin-left: 5px;
 }
 
 .presentation--heading {
@@ -212,9 +393,43 @@ header {
 }
 
 .presentation--p {
-  padding: 0 30px;
+  padding: 0 10%;
 }
 
+@media screen and (min-width: 672px) {
+  .presentation {
+    padding-bottom: 10%;
+  }
+
+  .presentation--heading {
+    margin: 8% 0;
+  }
+
+  .presentation--title {
+    padding: 0 20%;
+  }
+
+  .presentation--p {
+    padding: 0 15%;
+  }
+
+  input {
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 672px) {
+  .presentation--heading {
+    margin: 6% 0;
+  }
+
+  .presentation--title {
+    padding: 0 20%;
+  }
+
+  .presentation--p {
+    padding: 0 10%;
+  }
+}
 .fctment {
   padding: 12% 3%;
 }
@@ -228,7 +443,7 @@ header {
 }
 
 .fctment--li {
-  margin-bottom: 4%;
+  margin-bottom: 8%;
 }
 
 .resto {
@@ -277,7 +492,7 @@ footer {
 .menu {
   position: relative;
   bottom: 70px;
-  padding: 8% 4% 10% 4%;
+  padding: 8% 4% 7% 4%;
 }
 
 .menu--heading {
@@ -286,6 +501,10 @@ footer {
   align-items: center;
   margin-bottom: 7%;
   padding-right: 20px;
+}
+
+.dishlist {
+  margin-bottom: 15%;
 }
 
 .dishlist--li, .dishlist--heading {
@@ -300,7 +519,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+  margin: auto;
+}
+
+h1.presentation--title, h2.homepage--heading {
+  font-weight: 600;
+}
+
+.presentation--p {
+  font-size: inherit;
 }
 
 .presentation {
@@ -318,12 +545,20 @@ footer {
   background-color: rgb(240, 240, 240);
 }
 
-h1.presentation--title, h2.homepage--heading {
-  font-weight: 600;
+@media screen and (min-width: 672px) {
+  .presentation--p {
+    font-size: 24px;
+  }
 }
-
-.presentation--p {
-  font-size: 18px;
+@media screen and (min-width: 992px) {
+  .presentation--p {
+    font-size: 35px;
+  }
+}
+.banner img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .menu {
@@ -335,14 +570,16 @@ h1.presentation--title, h2.homepage--heading {
 }
 
 .dishlist--heading {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   font-size: 16px;
+  margin-right: 50px;
 }
 .dishlist--heading::after {
-  content: "___";
-  justify-content: flex-end;
-  font-size: 40px;
+  content: "__";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 50px;
   font-weight: 400;
   color: #99E2D0;
 }

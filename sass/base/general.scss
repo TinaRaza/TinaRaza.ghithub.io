@@ -5,14 +5,14 @@ html{
 
 
 h1, h2{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.5;
+    font-size: 24px;   
+    line-height: 1.2;
+    
 }   
 
 
 h3{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -21,20 +21,45 @@ p{
     line-height: 1.5
 }
 
-p.divCaption--p{
-    font-size: 18px;
-}
 
-p.footer--p{
-    font-weight: 400;
-    font-size: 14px;
-}
-
-span.spantext{
-    font-weight: 600;
+span{
+    font-weight: 500;
 }
 
 a{
     text-decoration: none;
     color: inherit;
+}
+
+@media screen and (min-width:672px) {
+    html{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-size: 35px;   
+        
+    }   
+    
+    h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    html{
+        font-size: 22px;
+    }
+    
+    h1 {
+        font-size: 60px;   
+        
+    }   
+
+    h2{
+         font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
 }

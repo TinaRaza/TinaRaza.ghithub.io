@@ -1,3 +1,9 @@
+
+.banner img{
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
 .menu{
     border-radius: 40px 40px 0 0;
 }
@@ -7,13 +13,15 @@
 }
 
 .dishlist--heading{
-    display: flex;
-    flex-direction: column;
+    position:relative;
     font-size: 16px;
+    margin-right: 50px;
         &::after{
-            content: "___";
-            justify-content: flex-end;
-            font-size: 40px;
+            content: "__";  
+            position: absolute;
+            bottom:-20px;
+            left: 0;       
+            font-size: 50px;
             font-weight: 400;
             color: #99E2D0;
         }

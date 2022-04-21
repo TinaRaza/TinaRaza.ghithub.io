@@ -14,6 +14,10 @@
 
     width: 100%;
     height: 50px;
+
+    input{
+        margin-left: 5px;
+    }
 }
 
 .presentation--heading{
@@ -34,6 +38,45 @@
 }
 
 .presentation--p{
-    padding: 0 30px;
+    padding: 0 10%;
 }
 
+@media screen and (min-width:672px){
+
+    .presentation{
+        padding-bottom: 10%;
+    }
+
+    .presentation--heading{
+        margin: 8% 0;
+        
+    }   
+    .presentation--title{
+        padding: 0 20%;
+        
+    }
+    
+    .presentation--p{
+        padding: 0 15%;
+    }
+
+    input{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width:672px){
+
+    .presentation--heading{
+        margin: 6% 0;
+        
+    }   
+    .presentation--title{
+        padding: 0 20%;
+        
+    }
+    
+    .presentation--p{
+        padding: 0 10%;
+    }
+}

@@ -3,13 +3,36 @@ header{
     align-items: center;
     justify-content: center;
 
-    height: 65px;
+    padding: 4%;
 }
 
 .header--logo{
     margin: auto;
+    width: 160px;
 }
 
 .linkHomepage--icon{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+@media screen and (min-width:672px) {
+    header{
+        padding:2% 4%;
+    }
+    .header--logo{
+        width: 240px;
+    }
+
+    .linkHomepage--icon{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:992px) {
+    .header--logo{
+        width: 280px;
+    }
+
+        .linkHomepage--icon{
+            font-size: 40px;
+        }
 }

@@ -1,3 +1,13 @@
+// style style des titres et des textes
+
+h1.presentation--title, h2.homepage--heading{
+    font-weight: 600;
+}
+
+.presentation--p{
+    font-size: inherit;
+}
+
 // background des sections
 .presentation{
     background-color: rgb(240, 240, 240);
@@ -16,12 +26,14 @@
     background-color:  rgb(240, 240, 240);
 }
 
-// style style des titres et des textes
-
-h1.presentation--title, h2.homepage--heading{
-    font-weight: 600;
+@media screen and (min-width:672px){
+    .presentation--p{
+        font-size: 24px;
+    }
 }
 
-.presentation--p{
-    font-size: 18px;
+@media screen and (min-width:992px){
+    .presentation--p{
+        font-size: 35px;
+    }
 }

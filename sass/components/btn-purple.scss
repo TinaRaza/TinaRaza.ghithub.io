@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     
-    width: 49%;
+    width: 200px;
     padding: 4%;
     
     color: white;
@@ -15,5 +15,29 @@
     
     span{
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width:672px){
+    .link--button{
+        width: 300px;
+        border-radius: 50px;
+        span{
+                font-size: 25px;
+                white-space: nowrap;
+            }
+
+    }
+}
+
+@media screen and (min-width:992px){
+    .link--button{
+        width: 30%;
+        padding: 2%;
+        border-radius: 100px;
+        span{
+                font-size: 25px;
+            }
+
     }
 }
