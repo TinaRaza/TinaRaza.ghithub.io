@@ -28,6 +28,12 @@ header{
     }
 }
 @media screen and (min-width:992px) {
+
+    header{
+        box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) ;
+        -webkit-box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) ;
+        -moz-box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) ;
+    }
     .header--logo{
         width: 280px;
     }

@@ -31,7 +31,7 @@
         
             border-radius: 2px;
             height: 15%;
-            width: 26%;
+            width: 90px;
             
             font-size: 14px;
             font-weight: 500;
@@ -54,10 +54,35 @@
             margin-bottom: 2%;
         }
 
+        .fa-heart{
+            margin-right: 4%; 
+            font-size: 25px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 672px){
+    .linkMenu--card{
+    height: 300px;
+        
+    }
+
+    .divImg--span{
+        margin-left: 100px;
+        font-size: 50px;
+    }
+
     .fa-heart{
-        margin-right: 4%; 
+        font-size: 30px; 
     }
 
-    }
+}
 
+@media screen and (min-width: 992px){
+    .divImg--span{
+        margin-left: 25px;
+        font-size: 50px;
+    }
 }

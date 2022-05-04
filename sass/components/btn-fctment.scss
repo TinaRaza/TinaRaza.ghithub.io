@@ -2,50 +2,46 @@
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-
-    background-color:rgb(250, 250, 250) ;
+    
     height: 70px;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-family: inherit;
 
     border: none;
     border-radius: 20px;
 
+    background-color:rgb(250, 250, 250); 
     box-shadow: 1px 3px 5px 1px rgba(198,190,190,0.4);
     -webkit-box-shadow: 1px 3px 5px 1px rgba(198,190,190,0.4);
     -moz-box-shadow: 1px 2px 5px 1px rgba(198,190,190,0.4);
+}
 
-    span{
-        font-weight: 600;
+span{
+    font-weight: 600;
+}
 
-        &.fctment--number{
-            position: absolute;
-            right: 89%;
-            padding: 5px 10px;
-            border-radius: 20px;
-            
-            font-size: 14px;
-            font-weight: 500;
-            
-            
-            background-color: #9356DC;
-            color: white;
-        }
+.fctment--number{
+    margin-left: -20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    background-color: #9356DC;
+    color: white;
+}
 
-        &.fctment--text{
-            margin-left: 7%;
-        }
+.fctment--text{
+    margin-left: 20px;
+}
 
-    }
 
-    i{
-        color: grey;
-        margin-left: 10%;
+.fctment--icon{
+    font-size: 18px;
+    color: grey;
+    margin-left: 20px;
 
-        &:hover{
-            color: #9356DC;
-        }
+    &:hover{
+        color: #9356DC;
     }
 }
 
@@ -57,10 +53,44 @@
     -webkit-box-shadow: 1px 3px 5px 1px rgba(198,190,190,0.8);
     -moz-box-shadow: 1px 2px 5px 1px rgba(198,190,190,0.8);
 
-    >.fctment--icon{
+    .fctment--icon{
         color: #9356DC;
     }
 }
 
 
+@media screen and (min-width: 672px) {
+    .fctment--button{
+        height: 90px;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 30px;  
+    }
 
+    .fctment--icon{
+        margin-left: 40px;
+        font-size: 24px
+    }
+
+    .fctment--number{
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .fctment--text{
+        margin-left: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    i.fctment--icon{
+        margin-left: 25px;
+    }
+
+    .fctment--text{
+        margin-left: 25px;
+        white-space: nowrap;
+    }
+    
+}

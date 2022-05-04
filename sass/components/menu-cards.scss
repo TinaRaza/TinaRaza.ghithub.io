@@ -20,8 +20,27 @@
         .price{
             font-weight: 600;
         }
+    } 
+}
+
+
+@media screen and (min-width: 672px){
+    .dishCard{
+        padding: 3%;
+
+        .dishCard--name{
+            margin-bottom: 5px;
+            font-size: 17px;
+        }
+    
+        .dishCard--detail{
+            font-size: 16px;
+        } 
     }
+}
 
-
-        
+@media screen and (min-width: 992px){
+    .dishCard--name{
+        font-size: 19px;
+    }
 }

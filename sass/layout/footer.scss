@@ -15,8 +15,8 @@ footer{
     margin-bottom: 1%;
 
     .footer--link{
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
     
     .footer--p{
@@ -24,13 +24,13 @@ footer{
     }
 
     .fa-utensils{
-    font-size: 14px;
-    margin-right: 14px
+        font-size: 14px;
+        margin-right: 14px
     }
 
     .fa-handshake-angle{
-    font-size: 12px;
-    margin-right: 11px;
+        font-size: 12px;
+        margin-right: 11px;
     }   
 }
 
@@ -39,3 +39,17 @@ footer{
 
 
 
+@media screen and (min-width: 672px) {
+
+    footer{
+        padding: 5% 4% 7% 4%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 672px) {
+
+    footer{
+        font-size: 20 px;
+    }
+}

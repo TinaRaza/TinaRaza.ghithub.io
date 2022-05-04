@@ -10,3 +10,33 @@
     margin-bottom: 5%;
 }
 
+@media screen and (min-width: 672px){
+
+    .resto{
+        padding: 12% 6%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .resto{
+        padding: 8% 3%;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .resto-ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 3%;
+
+            .resto-li{
+                width: 48%;
+            }
+        }
+    }
+
+    
+
+
+}

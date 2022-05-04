@@ -15,11 +15,10 @@ h1.presentation--title, h2.homepage--heading{
 
 .presentation--location{
     box-shadow: 9px 12px 6px -11px rgba(122,122,122,0.51) inset;
--webkit-box-shadow: 9px 12px 6px -11px rgba(122,122,122,0.51) inset;
--moz-box-shadow: 9px 12px 6px -11px rgba(122,122,122,0.51) inset;
+    -webkit-box-shadow: 9px 12px 6px -11px rgba(122,122,122,0.51) inset;
+    -moz-box-shadow: 9px 12px 6px -11px rgba(122,122,122,0.51) inset;
 
-    background-color: rgba(206, 206, 206, 0.408);
-    
+    background-color: rgba(162, 160, 160, 0.408);
 }
 
 .resto{
@@ -34,6 +33,6 @@ h1.presentation--title, h2.homepage--heading{
 
 @media screen and (min-width:992px){
     .presentation--p{
-        font-size: 35px;
+        font-size: 30px;
     }
 }

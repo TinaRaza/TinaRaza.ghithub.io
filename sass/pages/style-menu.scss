@@ -4,6 +4,7 @@
     width: 100%;
     object-fit: cover;
 }
+
 .menu{
     border-radius: 40px 40px 0 0;
 }
@@ -19,7 +20,7 @@
         &::after{
             content: "__";  
             position: absolute;
-            bottom:-20px;
+            bottom:-19px;
             left: 0;       
             font-size: 50px;
             font-weight: 400;
@@ -27,3 +28,42 @@
         }
 }
 
+@media screen and (min-width: 672px){
+
+    .menu{
+        border-radius: 60px 60px 0 0;
+    }
+    
+    .banner img{
+        height: 380px;
+    }
+
+    .dishlist--heading{
+        font-size: 22px;
+        &::after{
+            content: "__";  
+            font-size: 50px;
+            bottom:-25px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .banner img{
+        height: 550px;
+    }
+
+    main.menu--main{
+        background-color: white;
+    }
+
+    .dishlist--heading{
+        font-size: 26px;
+        &::after{
+            content: "__";  
+            bottom:-25px;
+            font-size: 70px;
+        }
+    }
+}

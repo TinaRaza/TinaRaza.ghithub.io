@@ -2,14 +2,38 @@
     padding: 12% 3%;
 }
 
-.homepage--heading{
-    margin-bottom: 7%;
-}
-
 .fctment--ul{
-    margin-left: 4%;
+    margin: 0 3% 0 5%;
 }
 
 .fctment--li{
-    margin-bottom: 8%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:672px){
+    .fctment{
+        padding: 12% 6%;
+    }
+
+    .fctment--li{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .fctment{
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 8% 3%;
+
+        .fctment--ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 0%;
+    
+            li{
+                width: 31%;
+            }
+        }
+    }
 }
