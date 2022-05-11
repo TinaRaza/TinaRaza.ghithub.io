@@ -7,63 +7,64 @@
     border-radius: 20px;
 
     height: 240px;
-
-    .divImg{
-        position: relative;
-        width: 100%;
-        height: 70%;
-
-        .divImg--img{
-            border-radius: 20px 20px 0 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .divImg--span{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 77%;
-            left: 70%;
-            
-        
-            border-radius: 2px;
-            height: 15%;
-            width: 90px;
-            
-            font-size: 14px;
-            font-weight: 500;
-            background-color: #99E2D0;
-            color: #466860;            
-        }
-    }
-
-    .cardCaption{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 30%;
-        padding: 4%;
-        border-radius: 0 0 20px 20px;
-
-        background-color: white;
-
-        .divcaption--title{
-            margin-bottom: 2%;
-        }
-
-        .fa-heart{
-            margin-right: 4%; 
-            font-size: 25px;
-        }
-
-    }
-
 }
 
-@media screen and (min-width: 672px){
+.divImg{
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.divImg--img{
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.divImg--span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 77%;
+    left: 70%;
+    
+
+    border-radius: 2px;
+    height: 15%;
+    width: 90px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #99E2D0;
+    color: #466860;            
+}
+
+
+.cardCaption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    padding: 4%;
+    border-radius: 0 0 20px 20px;
+
+    background-color: white;
+}
+
+.divcaption--title{
+    margin-bottom: 2%;
+}
+
+.cardCaption--likeBtn{
+    margin-right: 4%; 
+    font-size: 25px;
+}
+
+
+
+@media screen and (min-width: 768px){
     .linkMenu--card{
     height: 300px;
         
@@ -71,10 +72,11 @@
 
     .divImg--span{
         margin-left: 100px;
-        font-size: 50px;
+        font-size: 18px;
+        width: 100px;
     }
 
-    .fa-heart{
+    .cardCaption--likeBtn{
         font-size: 30px; 
     }
 
@@ -83,6 +85,11 @@
 @media screen and (min-width: 992px){
     .divImg--span{
         margin-left: 25px;
-        font-size: 50px;
+        width: 110px;
     }
+
+    .cardCaption--likeBtn{
+        font-size: 35px;
+    }
+
 }

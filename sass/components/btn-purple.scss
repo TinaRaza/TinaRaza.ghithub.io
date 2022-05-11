@@ -5,39 +5,58 @@
     
     width: 200px;
     padding: 15px;
-    
-    color: white;
-    background: linear-gradient(0deg, rgba(168,120,224,1) 0%, rgba(255,121,218,1) 100%);
     border-radius: 30px;
+    color: white;
+    
     box-shadow: 5px 16px 18px -3px rgba(198,190,190,0.89);
     -webkit-box-shadow: 5px 16px 18px -3px rgba(198,190,190,0.89);
     -moz-box-shadow: 5px 16px 18px -3px rgba(198,190,190,0.89);
-    
-    span{
+
+    background: linear-gradient(356deg,rgba(168, 120, 224, 1) 0%,rgba(255, 121, 218, 1) 100%);
+
+}
+
+.link--spanText{
         font-size: 14px;
     }
-}
-
-@media screen and (min-width:672px){
+@media screen and (min-width:768px){
+    
     .link--button{
-        width: 300px;
         border-radius: 50px;
-        padding: 20px;
-        span{
-                font-size: 22px;
-                white-space: nowrap;
-            }
+        padding: 20px;        
+    }
 
+    .presentation .link--button{
+        width: 290px;
+    }
+
+    .menu .link--button{
+        width: 250px;
+    }
+
+    .link--spanText{
+        font-size: 20px;
+        white-space: nowrap;
+        
     }
 }
 
-@media screen and (min-width:992px){
+
+@media screen and (min-width: 992px){
+    
     .link--button{
-        width: 350px;
-        border-radius: 100px;
-        span{
-                font-size: 26px;
-            }
-
+        border-radius: 100px;      
     }
+    .presentation .link--button{
+        width: 360px;
+    }
+
+    .menu .link--button{
+        width: 300px;
+    }
+    .link--spanText{
+        font-size: 26px;
+    } 
+
 }
+

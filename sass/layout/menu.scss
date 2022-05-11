@@ -30,7 +30,7 @@
         margin:auto
     }
 
-@media screen and (min-width: 672px){
+@media screen and (min-width: 768px){
 
     .dishlist{
         margin-bottom: 10%;
@@ -52,9 +52,13 @@
 }
 
 @media screen and (min-width: 992px){
-    .menu{
-        max-width: 1100px;
+    
+    .menu--main{
+        max-width: 1200px;
         margin: auto;
+    }
+    
+    .menu{
         padding: 7% 4%;
         top: 0;
     }

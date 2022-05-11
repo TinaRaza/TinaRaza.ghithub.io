@@ -1,0 +1,21 @@
+.dishlist--article{
+    position: relative;
+    animation: slidebottom 5s ease-in-out;
+}
+
+@keyframes slidebottom { 
+    from{ bottom:-200px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+.delay1{
+    animation:slidebottom 0.5s;
+}
+
+.delay2{
+    animation: slidebottom 2s;
+}
+
+.delay3{
+    animation:slidebottom 4s;
+}

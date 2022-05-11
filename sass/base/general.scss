@@ -5,7 +5,7 @@ html{
 
 
 h1, h2{
-    font-size: 24px;   
+    font-size: 25px;   
     line-height: 1.2;
     
 }   
@@ -31,7 +31,7 @@ a{
     color: inherit;
 }
 
-@media screen and (min-width:672px) {
+@media screen and (min-width:768px) {
     html{
         font-size: 18px;
     }

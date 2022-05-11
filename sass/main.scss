@@ -11,7 +11,11 @@
 @use "components/btn-fctment.scss";
 @use "components/btn-purple.scss";
 @use "components/imput-pres.scss";
-@use "components/like-btn.scss";
+
+@use "animations/menu-anim.scss";
+@use "animations/likeBtn-anim.scss";
+@use "animations/linkBtn-anim.scss";
+@use "animations/loader-anim.scss";
 
 // POSITIONNEMENT AVEC FLEXBOX 
 

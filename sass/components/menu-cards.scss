@@ -3,44 +3,47 @@
     border-radius: 18px;
     background-color: white;
     
+}
+
+.dishCard--name{
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.dishCard--detail{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    font-size: 14px;
+
+    .price{
+        font-weight: 600;
+    }
+} 
+
+
+
+@media screen and (min-width:768px){
+
+    .dishCard{
+        padding: 3%;
+    }
 
     .dishCard--name{
-        margin-bottom: 3px;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .dishCard--detail{
         font-size: 16px;
 
     }
 
-    .dishCard--detail{
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-
-        font-size: 14px;
-
-        .price{
-            font-weight: 600;
-        }
-    } 
 }
 
-
-@media screen and (min-width: 672px){
+@media screen and (min-width:992px){
     .dishCard{
-        padding: 3%;
-
-        .dishCard--name{
-            margin-bottom: 5px;
-            font-size: 17px;
-        }
-    
-        .dishCard--detail{
-            font-size: 16px;
-        } 
-    }
-}
-
-@media screen and (min-width: 992px){
-    .dishCard--name{
-        font-size: 19px;
+        padding: 2% 3%;
     }
 }

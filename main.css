@@ -75,7 +75,7 @@ html {
 }
 
 h1, h2 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1.2;
 }
 
@@ -98,7 +98,7 @@ a {
   color: inherit;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 18px;
   }
@@ -135,18 +135,21 @@ a {
   border-radius: 20px;
   height: 240px;
 }
-.linkMenu--card .divImg {
+
+.divImg {
   position: relative;
   width: 100%;
   height: 70%;
 }
-.linkMenu--card .divImg .divImg--img {
+
+.divImg--img {
   border-radius: 20px 20px 0 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.linkMenu--card .divImg .divImg--span {
+
+.divImg--span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +164,8 @@ a {
   background-color: #99E2D0;
   color: #466860;
 }
-.linkMenu--card .cardCaption {
+
+.cardCaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,32 +174,39 @@ a {
   border-radius: 0 0 20px 20px;
   background-color: white;
 }
-.linkMenu--card .cardCaption .divcaption--title {
+
+.divcaption--title {
   margin-bottom: 2%;
 }
-.linkMenu--card .cardCaption .fa-heart {
+
+.cardCaption--likeBtn {
   margin-right: 4%;
   font-size: 25px;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .linkMenu--card {
     height: 300px;
   }
 
   .divImg--span {
     margin-left: 100px;
-    font-size: 50px;
+    font-size: 18px;
+    width: 100px;
   }
 
-  .fa-heart {
+  .cardCaption--likeBtn {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 992px) {
   .divImg--span {
     margin-left: 25px;
-    font-size: 50px;
+    width: 110px;
+  }
+
+  .cardCaption--likeBtn {
+    font-size: 35px;
   }
 }
 .dishCard {
@@ -203,35 +214,39 @@ a {
   border-radius: 18px;
   background-color: white;
 }
-.dishCard .dishCard--name {
+
+.dishCard--name {
   margin-bottom: 3px;
   font-size: 16px;
 }
-.dishCard .dishCard--detail {
+
+.dishCard--detail {
   display: flex;
   justify-content: space-between;
   align-self: center;
   font-size: 14px;
 }
-.dishCard .dishCard--detail .price {
+.dishCard--detail .price {
   font-weight: 600;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .dishCard {
     padding: 3%;
   }
-  .dishCard .dishCard--name {
+
+  .dishCard--name {
+    font-size: 18px;
     margin-bottom: 5px;
-    font-size: 17px;
   }
-  .dishCard .dishCard--detail {
+
+  .dishCard--detail {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 992px) {
-  .dishCard--name {
-    font-size: 19px;
+  .dishCard {
+    padding: 2% 3%;
   }
 }
 .fctment--button {
@@ -286,7 +301,7 @@ span {
   color: #9356DC;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .fctment--button {
     height: 90px;
     width: 100%;
@@ -324,34 +339,51 @@ span {
   align-items: center;
   width: 200px;
   padding: 15px;
-  color: white;
-  background: linear-gradient(0deg, rgb(168, 120, 224) 0%, rgb(255, 121, 218) 100%);
   border-radius: 30px;
+  color: white;
   box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
   -webkit-box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
   -moz-box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
+  background: linear-gradient(356deg, rgb(168, 120, 224) 0%, rgb(255, 121, 218) 100%);
 }
-.link--button span {
+
+.link--spanText {
   font-size: 14px;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .link--button {
-    width: 300px;
     border-radius: 50px;
     padding: 20px;
   }
-  .link--button span {
-    font-size: 22px;
+
+  .presentation .link--button {
+    width: 290px;
+  }
+
+  .menu .link--button {
+    width: 250px;
+  }
+
+  .link--spanText {
+    font-size: 20px;
     white-space: nowrap;
   }
 }
 @media screen and (min-width: 992px) {
   .link--button {
-    width: 350px;
     border-radius: 100px;
   }
-  .link--button span {
+
+  .presentation .link--button {
+    width: 360px;
+  }
+
+  .menu .link--button {
+    width: 300px;
+  }
+
+  .link--spanText {
     font-size: 26px;
   }
 }
@@ -374,7 +406,7 @@ input::placeholder {
   color: rgb(62, 62, 62);
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .fa-location-dot {
     font-size: 20px;
   }
@@ -394,9 +426,119 @@ input::placeholder {
     font-size: 22px;
   }
 }
-.fa-heart {
-  color: #ffffff;
-  transition: color 500ms;
+.dishlist--article {
+  position: relative;
+  animation: slidebottom 5s ease-in-out;
+}
+
+@keyframes slidebottom {
+  from {
+    bottom: -200px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.delay1 {
+  animation: slidebottom 0.5s;
+}
+
+.delay2 {
+  animation: slidebottom 2s;
+}
+
+.delay3 {
+  animation: slidebottom 4s;
+}
+
+.scale1, .scale0 {
+  position: relative;
+}
+
+.cardCaption--likeBtn .scale1 {
+  left: 44px;
+}
+
+.menu--likeBtn .scale1 {
+  left: 50px;
+}
+
+.scale1 {
+  z-index: 1;
+}
+.scale1:active + .scale0 {
+  transform: scale(1);
+}
+
+.scale0 {
+  z-index: 2;
+  background: #FF79DA;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 1s;
+}
+
+.link--button {
+  transform: background 1s, box-shadow 1s;
+}
+.link--button:active {
+  background: linear-gradient(356deg, #b483e5 0%, #fface8 100%);
+  box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);
+  -webkit-box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);
+  -moz-box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);
+}
+
+.loader {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(168, 120, 224) 0%, rgb(255, 121, 218) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: opacity0 3000ms;
+  animation-fill-mode: forwards;
+}
+
+.loader--text {
+  margin-top: 20px;
+  color: #f2f2f2;
+  letter-spacing: 10px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.progress {
+  width: 300px;
+  height: 30px;
+  background: #f2f2f2;
+  border-radius: 50px;
+  transform-origin: 0% 50%;
+  animation: progress-bar 1000ms linear infinite;
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes opacity0 {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 header {
   display: flex;
@@ -414,7 +556,7 @@ header {
   font-size: 20px;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   header {
     padding: 2% 4%;
   }
@@ -479,7 +621,7 @@ header {
   padding: 0 10%;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .presentation {
     padding-bottom: 80px;
   }
@@ -502,7 +644,7 @@ header {
 }
 @media screen and (min-width: 992px) {
   .presentation {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 100px;
   }
@@ -523,7 +665,7 @@ header {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .fctment {
     padding: 12% 6%;
   }
@@ -534,9 +676,9 @@ header {
 }
 @media screen and (min-width: 992px) {
   .fctment {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 8% 3%;
+    padding: 4% 3%;
   }
   .fctment .fctment--ul {
     display: flex;
@@ -559,7 +701,7 @@ header {
   margin-bottom: 5%;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .resto {
     padding: 12% 6%;
   }
@@ -567,7 +709,7 @@ header {
 @media screen and (min-width: 992px) {
   .resto {
     padding: 8% 3%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .resto .resto-ul {
@@ -612,9 +754,9 @@ footer {
   margin-right: 11px;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   footer {
-    padding: 5% 4% 7% 4%;
+    padding: 5% 4%;
     font-size: 18px;
   }
 }
@@ -653,7 +795,7 @@ footer {
   margin: auto;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .dishlist {
     margin-bottom: 10%;
   }
@@ -673,9 +815,12 @@ footer {
   }
 }
 @media screen and (min-width: 992px) {
-  .menu {
-    max-width: 1100px;
+  .menu--main {
+    max-width: 1200px;
     margin: auto;
+  }
+
+  .menu {
     padding: 7% 4%;
     top: 0;
   }
@@ -727,6 +872,10 @@ h1.presentation--title, h2.homepage--heading {
   border-radius: 40px 40px 0 0;
 }
 
+.menu--title, .menu--likeBtn {
+  font-size: 28px;
+}
+
 .menu--main, .menu {
   background-color: rgb(240, 240, 240);
 }
@@ -746,13 +895,17 @@ h1.presentation--title, h2.homepage--heading {
   color: #99E2D0;
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 768px) {
   .menu {
     border-radius: 60px 60px 0 0;
   }
 
   .banner img {
     height: 380px;
+  }
+
+  .menu--title, .menu--likeBtn {
+    font-size: 40px;
   }
 
   .dishlist--heading {
@@ -765,11 +918,23 @@ h1.presentation--title, h2.homepage--heading {
   }
 }
 @media screen and (min-width: 992px) {
-  .banner img {
-    height: 550px;
+  .banner {
+    position: relative;
+    top: 2px;
+    border-radius: 40px 40px 0 0;
   }
 
-  main.menu--main {
+  .banner img {
+    height: 450px;
+    border-radius: 40px 40px 0 0;
+    background-color: transparent;
+  }
+
+  .menu {
+    border-radius: 0;
+  }
+
+  .menu--main {
     background-color: white;
   }
 
