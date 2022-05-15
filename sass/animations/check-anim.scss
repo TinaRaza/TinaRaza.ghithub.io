@@ -1,0 +1,54 @@
+.dishCard{
+    &:hover > .dishCard--check{
+        width: 80px;
+            & > .fa-check{
+                transform: rotate(1turn) scale(1);
+                overflow:auto;
+            }
+    }
+}
+
+.dishCard--check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    border-radius: 0 18px 18px 0;
+    height: 100%;
+    width: 0;
+    transition: width 400ms linear;
+}
+
+.fa-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: #99E2D0;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 20px;
+    
+    transform: rotate(0turn) scale(0.1);
+    overflow: hidden;
+    transition: transform 400ms linear;
+    
+}
+
+@media screen and (min-width:768px){
+
+    
+    .dishCard{
+        &:hover > .dishCard--check{
+            width: 95px;
+        }
+    }
+}
+
+@media screen and (min-width:992px){
+    .dishCard{
+        &:hover > .dishCard--check{
+            width: 100px;
+        }
+    }
+}

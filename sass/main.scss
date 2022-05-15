@@ -16,6 +16,8 @@
 @use "animations/likeBtn-anim.scss";
 @use "animations/linkBtn-anim.scss";
 @use "animations/loader-anim.scss";
+@use "animations/check-anim.scss";
+
 
 // POSITIONNEMENT AVEC FLEXBOX 
 
@@ -24,7 +26,8 @@
 @use "layout/fonctionnement.scss";
 @use "layout/restaurants.scss";
 @use "layout/footer.scss";
-@use "layout/menu.scss";
+@use "layout/menu.scss";;
+
 
 
 // style spécifique propre à chaque page

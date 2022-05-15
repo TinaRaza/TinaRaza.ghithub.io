@@ -1,8 +1,24 @@
 .dishCard{
-    padding: 4% 6% 4% 4%;
     border-radius: 18px;
     background-color: white;
-    
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+        &:hover > .dishCard--detailContainer, .dishCard--name {
+            width: calc(78%)
+        }
+}
+
+.dishCard--detailContainer{
+    width: calc(100%);
+    padding: 0 4%; 
+
+    transition: width 340ms linear;
+
 }
 
 .dishCard--name{
@@ -10,24 +26,36 @@
     font-size: 16px;
 }
 
+.dishCard--caption{
+    font-weight: 400;
+}
+
 .dishCard--detail{
     display: flex;
     justify-content: space-between;
-    align-self: center;
-
     font-size: 14px;
-
-    .price{
-        font-weight: 600;
-    }
 } 
+
+.dishCard--caption, .dishCard--name{
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100%);
+}
+
+.price{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
 @media screen and (min-width:768px){
 
     .dishCard{
-        padding: 3%;
+        height: 80px;
     }
 
     .dishCard--name{
@@ -44,6 +72,10 @@
 
 @media screen and (min-width:992px){
     .dishCard{
-        padding: 2% 3%;
+        height: 90px;
+
+        &:hover > .dishCard--detailContainer, .dishCard--name {
+            width: calc(88%)
+        }
     }
 }

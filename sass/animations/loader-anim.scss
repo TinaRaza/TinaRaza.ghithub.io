@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
 
-    animation: opacity0 3000ms;
+    animation: zindex 3000ms;
     animation-fill-mode: forwards;
 }
 
@@ -42,13 +42,15 @@
     }
 }
 
-@keyframes opacity0{
+@keyframes zindex{
     99%{
+        z-index: 1;
         opacity: 1;
     }
 
     
     100% {
+        z-index: -1;
         opacity: 0;
         display: none;
         

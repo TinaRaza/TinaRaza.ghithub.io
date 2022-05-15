@@ -210,9 +210,23 @@ a {
   }
 }
 .dishCard {
-  padding: 4% 6% 4% 4%;
   border-radius: 18px;
   background-color: white;
+  height: 70px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dishCard:hover > .dishCard--detailContainer, .dishCard .dishCard--name {
+  width: 78%;
+}
+
+.dishCard--detailContainer {
+  width: 100%;
+  padding: 0 4%;
+  transition: width 340ms linear;
 }
 
 .dishCard--name {
@@ -220,19 +234,32 @@ a {
   font-size: 16px;
 }
 
+.dishCard--caption {
+  font-weight: 400;
+}
+
 .dishCard--detail {
   display: flex;
   justify-content: space-between;
-  align-self: center;
   font-size: 14px;
 }
-.dishCard--detail .price {
-  font-weight: 600;
+
+.dishCard--caption, .dishCard--name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .dishCard {
-    padding: 3%;
+    height: 80px;
   }
 
   .dishCard--name {
@@ -246,7 +273,10 @@ a {
 }
 @media screen and (min-width: 992px) {
   .dishCard {
-    padding: 2% 3%;
+    height: 90px;
+  }
+  .dishCard:hover > .dishCard--detailContainer, .dishCard .dishCard--name {
+    width: 88%;
   }
 }
 .fctment--button {
@@ -453,20 +483,30 @@ input::placeholder {
   animation: slidebottom 4s;
 }
 
-.scale1, .scale0 {
+.scale1 {
   position: relative;
+  right: 0;
 }
 
-.cardCaption--likeBtn .scale1 {
-  left: 44px;
+.scale0 {
+  position: absolute;
 }
 
-.menu--likeBtn .scale1 {
-  left: 50px;
+.menu--likeBtn .scale0 {
+  right: 35px;
+}
+
+.cardCaption--likeBtn .scale0 {
+  right: 41px;
 }
 
 .scale1 {
   z-index: 1;
+  transform: scale(1);
+  transition: transform 1000ms 400ms;
+}
+.scale1:active {
+  transform: scale(0.9);
 }
 .scale1:active + .scale0 {
   transform: scale(1);
@@ -479,9 +519,32 @@ input::placeholder {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
-  transition: transform 1s;
+  transition: transform 1000ms;
 }
 
+@media screen and (min-width: 768px) {
+  .menu--likeBtn .scale0 {
+    right: 53px;
+  }
+
+  .cardCaption--likeBtn .scale0 {
+    right: 105px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu--likeBtn .scale0 {
+    right: 68px;
+  }
+
+  .cardCaption--likeBtn .scale1 {
+    left: 44px;
+  }
+
+  .cardCaption--likeBtn .scale0 {
+    position: relative;
+    left: 0px;
+  }
+}
 .link--button {
   transform: background 1s, box-shadow 1s;
 }
@@ -502,7 +565,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: opacity0 3000ms;
+  animation: zindex 3000ms;
   animation-fill-mode: forwards;
 }
 
@@ -531,13 +594,58 @@ input::placeholder {
     transform: scale(1);
   }
 }
-@keyframes opacity0 {
+@keyframes zindex {
   99% {
+    z-index: 1;
     opacity: 1;
   }
   100% {
+    z-index: -1;
     opacity: 0;
     display: none;
+  }
+}
+.dishCard:hover > .dishCard--check {
+  width: 80px;
+}
+.dishCard:hover > .dishCard--check > .fa-check {
+  transform: rotate(1turn) scale(1);
+  overflow: auto;
+}
+
+.dishCard--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 18px 18px 0;
+  height: 100%;
+  width: 0;
+  transition: width 400ms linear;
+}
+
+.fa-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  color: #99E2D0;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 20px;
+  transform: rotate(0turn) scale(0.1);
+  overflow: hidden;
+  transition: transform 400ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .dishCard:hover > .dishCard--check {
+    width: 95px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dishCard:hover > .dishCard--check {
+    width: 100px;
   }
 }
 header {
@@ -589,6 +697,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 0;
   padding-bottom: 50px;
 }
 

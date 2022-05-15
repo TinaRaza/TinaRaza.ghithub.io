@@ -6,31 +6,69 @@
 }
 
 // position des coeur regular et solid
-.scale1, .scale0{
+
+.scale1{
     position: relative;
+    right: 0;
 }
 
-.cardCaption--likeBtn .scale1{
-    left: 44px;
+.scale0{
+    position: absolute;
 }
 
-.menu--likeBtn .scale1{
-    left: 50px;
+.menu--likeBtn .scale0{
+    right: 35px;
 }
+
+.cardCaption--likeBtn .scale0{
+    right: 41px;
+}
+
 
 .scale1{
     z-index: 1;
+    transform: scale(1);
+    transition: transform 1000ms 400ms;
+    &:active{
+        transform: scale(0.9);
 
-    &:active + .scale0{
-        transform: scale(1);
+        & + .scale0{
+            transform: scale(1);
+        }
     }
-}
+} 
 
 .scale0{
     z-index: 2; 
     @include radian-heart;
     transform: scale(0);
-    transition: transform 1s;
+    transition: transform 1000ms;
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu--likeBtn .scale0{
+        right: 53px;
+    }
+
+    .cardCaption--likeBtn .scale0{
+        right: 105px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .menu--likeBtn .scale0{
+        right: 68px;
+    }
     
-    
+    .cardCaption--likeBtn .scale1{
+        left: 44px;
+    }
+
+    .cardCaption--likeBtn .scale0{
+        position: relative;
+        left: 0px;
+    }
 }
