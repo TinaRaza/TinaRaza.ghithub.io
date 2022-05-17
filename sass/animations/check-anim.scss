@@ -3,9 +3,9 @@
     &:hover > .dishCard--check{
         width: auto;
         padding: 0 25px;
-            & > .fa-check{
-                transform: rotate(1turn);
-            }
+        & > .fa-check{
+            transform: rotate(1turn);
+        }
     }
 }
 
@@ -32,7 +32,6 @@
     border-radius: 20px;
     
     transform: rotate(0turn);
-    
     transition: transform 400ms linear;
     
 }

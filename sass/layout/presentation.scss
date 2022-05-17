@@ -28,7 +28,7 @@
     flex-direction: column;
     text-align: center;
 
-    margin: 10% 0;
+    margin: 10% 0 6% 0;
     
 }   
 
@@ -46,11 +46,11 @@
 @media screen and (min-width:768px){
 
     .presentation{
-        padding-bottom: 80px;
+        padding-bottom: 6%;
     }
 
     .presentation--heading{
-        margin: 6% 0;
+        margin: 4% 0;
         
     }   
     .presentation--title{
@@ -71,11 +71,15 @@
     .presentation{
         max-width: 1200px;
         margin: 0 auto;
-        padding-bottom: 100px;
+        padding-bottom: 5%;
     }
 
+    .presentation--heading{
+        margin: 5% 0 3% 0;
+    }   
+
     .presentation--title{
-        padding: 0 25%;
+        padding: 0 20%;
         
     }
 

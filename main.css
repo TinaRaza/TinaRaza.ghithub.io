@@ -137,9 +137,12 @@ a {
 }
 
 .divImg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 72%;
 }
 
 .divImg--img {
@@ -154,12 +157,12 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 77%;
-  left: 70%;
+  top: 15px;
+  right: 13px;
+  height: 16%;
+  width: 80px;
   border-radius: 2px;
-  height: 15%;
-  width: 90px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   background-color: #99E2D0;
   color: #466860;
@@ -218,6 +221,9 @@ a {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  box-shadow: 1px 10px 16px -2px rgba(184, 184, 184, 0.39);
+  -webkit-box-shadow: 1px 10px 16px -2px rgba(184, 184, 184, 0.39);
+  -moz-box-shadow: 1px 10px 16px -2px rgba(184, 184, 184, 0.39);
 }
 .dishCard:hover > .dishCard--detailContainer, .dishCard .dishCard--name {
   width: 78%;
@@ -225,7 +231,7 @@ a {
 
 .dishCard--detailContainer {
   width: 100%;
-  padding: 0 4%;
+  padding: 0 20px 0 15px;
   transition: width 340ms linear;
 }
 
@@ -255,6 +261,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -371,14 +378,19 @@ span {
   padding: 15px;
   border-radius: 30px;
   color: white;
-  box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
-  -webkit-box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
-  -moz-box-shadow: 5px 16px 18px -3px rgba(198, 190, 190, 0.89);
+  box-shadow: 1px 7px 23px -5px rgba(61, 61, 61, 0.87);
+  -webkit-box-shadow: 1px 7px 23px -5px rgba(61, 61, 61, 0.87);
+  -moz-box-shadow: 1px 7px 23px -5px rgba(61, 61, 61, 0.87);
   background: linear-gradient(356deg, rgb(168, 120, 224) 0%, rgb(255, 121, 218) 100%);
+}
+
+.menu .link--button {
+  width: 165px;
 }
 
 .link--spanText {
   font-size: 14px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -483,68 +495,36 @@ input::placeholder {
   animation: slidebottom 4s;
 }
 
+.menu--likeBtn, .cardCaption--likeBtn {
+  display: flex;
+  flex-direction: column;
+}
+
 .scale1 {
+  z-index: 0;
   position: relative;
   right: 0;
-}
-
-.scale0 {
-  position: absolute;
-}
-
-.menu--likeBtn .scale0 {
-  right: 35px;
-}
-
-.cardCaption--likeBtn .scale0 {
-  right: 41px;
-}
-
-.scale1 {
-  z-index: 1;
   transform: scale(1);
-  transition: transform 1000ms 400ms;
+  transition: transform 400ms 400ms;
 }
-.scale1:active {
+.scale1:hover {
   transform: scale(0.9);
 }
-.scale1:active + .scale0 {
+.scale1:hover + .scale0 {
   transform: scale(1);
 }
 
 .scale0 {
-  z-index: 2;
+  z-index: 1;
+  position: absolute;
   background: #FF79DA;
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
-  transition: transform 1000ms;
+  transition: transform 600ms;
 }
 
-@media screen and (min-width: 768px) {
-  .menu--likeBtn .scale0 {
-    right: 53px;
-  }
-
-  .cardCaption--likeBtn .scale0 {
-    right: 105px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu--likeBtn .scale0 {
-    right: 68px;
-  }
-
-  .cardCaption--likeBtn .scale1 {
-    left: 44px;
-  }
-
-  .cardCaption--likeBtn .scale0 {
-    position: relative;
-    left: 0px;
-  }
-}
 .link--button {
   transform: background 1s, box-shadow 1s;
 }
@@ -728,7 +708,7 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 10% 0;
+  margin: 10% 0 6% 0;
 }
 
 .presentation--title {
@@ -742,11 +722,11 @@ header {
 
 @media screen and (min-width: 768px) {
   .presentation {
-    padding-bottom: 80px;
+    padding-bottom: 6%;
   }
 
   .presentation--heading {
-    margin: 6% 0;
+    margin: 4% 0;
   }
 
   .presentation--title {
@@ -765,11 +745,15 @@ header {
   .presentation {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
+  }
+
+  .presentation--heading {
+    margin: 5% 0 3% 0;
   }
 
   .presentation--title {
-    padding: 0 25%;
+    padding: 0 20%;
   }
 }
 .fctment {
@@ -843,7 +827,7 @@ header {
   }
 }
 footer {
-  padding: 5% 4% 10% 4%;
+  padding: 8% 6%;
   background-color: rgb(51, 49, 49);
   color: white;
 }
@@ -851,11 +835,12 @@ footer {
 .footer--title {
   display: block;
   padding-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .footer--li {
-  margin-bottom: 1%;
+  margin-bottom: 6px;
 }
 .footer--li .footer--link {
   display: flex;
@@ -875,19 +860,34 @@ footer {
 
 @media screen and (min-width: 768px) {
   footer {
-    padding: 5% 4%;
-    font-size: 18px;
+    padding: 5% 0 6% 5%;
+  }
+
+  .footer--title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .footer--li {
+    margin-bottom: 10px;
+  }
+  .footer--li .fa-utensils {
+    font-size: 20px;
   }
 }
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 992px) {
   footer {
-    font-size: 20 px;
+    padding: 3% 0 3% 4%;
+  }
+
+  .footer--title {
+    font-size: 24px;
   }
 }
 .menu {
   position: relative;
   bottom: 70px;
-  padding: 8% 4% 7% 4%;
+  padding: 8% 4% 0 4%;
 }
 
 .menu--heading {
@@ -899,7 +899,11 @@ footer {
 }
 
 .dishlist {
-  margin-bottom: 15%;
+  margin-bottom: 50px;
+}
+
+.dishlist--dishCard {
+  margin-bottom: 10%;
 }
 
 .dishlist--li, .dishlist--heading {
@@ -919,7 +923,7 @@ footer {
     margin-bottom: 10%;
   }
 
-  .dishlist--article {
+  .dishlist--dishCard {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -964,7 +968,7 @@ h1.presentation--title, h2.homepage--heading {
   box-shadow: 9px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
   -webkit-box-shadow: 9px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
   -moz-box-shadow: 9px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
-  background-color: rgba(162, 160, 160, 0.408);
+  background-color: rgba(215, 215, 215, 0.531);
 }
 
 .resto {
@@ -1007,9 +1011,9 @@ h1.presentation--title, h2.homepage--heading {
 .dishlist--heading::after {
   content: "__";
   position: absolute;
-  bottom: -19px;
+  bottom: -13px;
   left: 0;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
   color: #99E2D0;
 }

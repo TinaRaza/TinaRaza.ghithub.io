@@ -7,29 +7,18 @@
 
 // position des coeur regular et solid
 
+.menu--likeBtn, .cardCaption--likeBtn {
+    display: flex;
+    flex-direction: column;
+}
+
 .scale1{
+    z-index: 0;
     position: relative;
     right: 0;
-}
-
-.scale0{
-    position: absolute;
-}
-
-.menu--likeBtn .scale0{
-    right: 35px;
-}
-
-.cardCaption--likeBtn .scale0{
-    right: 41px;
-}
-
-
-.scale1{
-    z-index: 1;
     transform: scale(1);
-    transition: transform 1000ms 400ms;
-    &:active{
+    transition: transform 400ms 400ms;
+    &:hover{
         transform: scale(0.9);
 
         & + .scale0{
@@ -39,36 +28,10 @@
 } 
 
 .scale0{
-    z-index: 2; 
+    z-index: 1;
+    position: absolute;
     @include radian-heart;
     transform: scale(0);
-    transition: transform 1000ms;
+    transition: transform 600ms;
 }
 
-@media screen and (min-width: 768px) {
-
-    .menu--likeBtn .scale0{
-        right: 53px;
-    }
-
-    .cardCaption--likeBtn .scale0{
-        right: 105px;
-    }
-
-}
-
-@media screen and (min-width: 992px) {
-
-    .menu--likeBtn .scale0{
-        right: 68px;
-    }
-    
-    .cardCaption--likeBtn .scale1{
-        left: 44px;
-    }
-
-    .cardCaption--likeBtn .scale0{
-        position: relative;
-        left: 0px;
-    }
-}

@@ -1,5 +1,5 @@
 footer{
-    padding: 5% 4% 10% 4%;
+    padding: 8% 6% ;
     background-color: rgb(51, 49, 49);
     color: white;
 }
@@ -7,12 +7,12 @@ footer{
 .footer--title{
     display: block;
     padding-bottom: 20px;  
-    font-weight: 500;
-    
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .footer--li{
-    margin-bottom: 1%;
+    margin-bottom: 6px;
 
     .footer--link{
         display: flex;
@@ -42,14 +42,31 @@ footer{
 @media screen and (min-width: 768px) {
 
     footer{
-        padding: 5% 4%;
-        font-size: 18px;
+        padding: 5% 0 6% 5% ;
+    }
+
+    .footer--title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .footer--li{
+        margin-bottom: 10px;
+
+        .fa-utensils{
+            font-size: 20px;
+            
+        }
     }
 }
 
-@media screen and (min-width: 672px) {
+@media screen and (min-width: 992px) {
 
     footer{
-        font-size: 20 px;
+        padding: 3% 0 3% 4% ;
+    }
+
+    .footer--title{
+        font-size: 24px;
     }
 }

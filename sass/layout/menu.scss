@@ -2,7 +2,7 @@
     position: relative;
     bottom: 70px;
 
-    padding: 8% 4% 7% 4%;
+    padding: 8% 4% 0 4%;
 }
 
 .menu--heading{
@@ -14,7 +14,10 @@
 }
 
 .dishlist{
-    margin-bottom: 15%;
+    margin-bottom: 50px;
+}
+.dishlist--dishCard{
+    margin-bottom: 10%;
 }
 
 
@@ -27,7 +30,7 @@
 }
 
 .link--button{
-        margin:auto
+        margin:auto;
     }
 
 @media screen and (min-width: 768px){
@@ -35,7 +38,7 @@
     .dishlist{
         margin-bottom: 10%;
     }
-    .dishlist--article{
+    .dishlist--dishCard{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;           
