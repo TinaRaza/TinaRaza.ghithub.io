@@ -4,12 +4,12 @@
 }
 
 @keyframes slidebottom { 
-    from{ bottom:-200px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
+    from{ bottom:0px; opacity:0; } 
+    to{ bottom:-200px; opacity:1; }
 }
 
 .delay1{
-    animation:slidebottom 0.5s;
+    animation:slidebottom 1s;
 }
 
 .delay2{

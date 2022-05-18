@@ -4,7 +4,7 @@ $purpleGradient: linear-gradient(0deg, rgba(168,120,224,1) 0%, rgba(255,121,218,
 .link--button{
     transform: background 1s, box-shadow 1s ;
 
-    &:active{
+    &:hover{
         background:linear-gradient(356deg,lighten(rgba(155, 89, 220, 1), 10%) 0%,lighten(rgba(255, 121, 218, 1), 10%) 100%);
         
         box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);

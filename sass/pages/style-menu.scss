@@ -79,7 +79,12 @@
     }
 
     .menu--main{
+        margin-top: 1px;
         background-color: white;
+
+        box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) inset;
+        -webkit-box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) inset;
+        -moz-box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) inset;
     }
 
     .dishlist--heading{

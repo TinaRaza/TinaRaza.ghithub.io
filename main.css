@@ -475,16 +475,16 @@ input::placeholder {
 
 @keyframes slidebottom {
   from {
-    bottom: -200px;
+    bottom: 0px;
     opacity: 0;
   }
   to {
-    bottom: 0;
+    bottom: -200px;
     opacity: 1;
   }
 }
 .delay1 {
-  animation: slidebottom 0.5s;
+  animation: slidebottom 1s;
 }
 
 .delay2 {
@@ -501,21 +501,21 @@ input::placeholder {
 }
 
 .scale1 {
-  z-index: 0;
+  z-index: 1;
   position: relative;
-  right: 0;
   transform: scale(1);
-  transition: transform 400ms 400ms;
+  opacity: 1;
+  transition: all 600ms 200ms;
 }
 .scale1:hover {
-  transform: scale(0.9);
+  opacity: 0;
 }
 .scale1:hover + .scale0 {
   transform: scale(1);
 }
 
 .scale0 {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   background: #FF79DA;
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
@@ -528,7 +528,7 @@ input::placeholder {
 .link--button {
   transform: background 1s, box-shadow 1s;
 }
-.link--button:active {
+.link--button:hover {
   background: linear-gradient(356deg, #b483e5 0%, #fface8 100%);
   box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);
   -webkit-box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);
@@ -1058,7 +1058,11 @@ h1.presentation--title, h2.homepage--heading {
   }
 
   .menu--main {
+    margin-top: 1px;
     background-color: white;
+    box-shadow: 1px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
+    -webkit-box-shadow: 1px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
+    -moz-box-shadow: 1px 12px 6px -11px rgba(122, 122, 122, 0.51) inset;
   }
 
   .dishlist--heading {
