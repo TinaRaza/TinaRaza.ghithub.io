@@ -2,10 +2,8 @@
 .linkMenu--card{
     box-shadow: 6px 4px 7px -1px rgba(130, 130, 130, 0.26);
     -webkit-box-shadow: 6px 4px 7px -1px rgba(130,130,130,0.26);
-    -moz-box-shadow: 6px 4px 7px -1px rgba(130,130,130,0.26);
-    
+    -moz-box-shadow: 6px 4px 7px -1px rgba(130,130,130,0.26);  
     border-radius: 20px;
-
     height: 240px;
 }
 
@@ -32,13 +30,9 @@
     position: absolute;
     top: 15px;
     right: 13px;
-
     height: 16%;
     width: 80px;
-
     border-radius: 2px;
-
-    
     font-size: 13px;
     font-weight: 500;
     background-color: #99E2D0;
@@ -52,7 +46,6 @@
     height: 30%;
     padding: 4%;
     border-radius: 0 0 20px 20px;
-
     background-color: white;
 }
 
@@ -65,12 +58,9 @@
     font-size: 25px;
 }
 
-
-
 @media screen and (min-width: 768px){
     .linkMenu--card{
-    height: 300px;
-        
+    height: 300px;        
     }
 
     .divImg--span{
@@ -82,7 +72,6 @@
     .cardCaption--likeBtn{
         font-size: 30px; 
     }
-
 }
 
 @media screen and (min-width: 992px){
@@ -94,5 +83,4 @@
     .cardCaption--likeBtn{
         font-size: 35px;
     }
-
 }

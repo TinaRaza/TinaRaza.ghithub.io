@@ -585,12 +585,6 @@ input::placeholder {
     display: none;
   }
 }
-.displayNone {
-  animation: displayNone 1500ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes displayNone {}
 .dishCard {
   overflow: hidden;
 }

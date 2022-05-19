@@ -2,18 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 200px;
     padding: 15px;
     border-radius: 30px;
-    color: white;
-    
+    color: white;   
     box-shadow: 1px 7px 23px -5px rgba(61,61,61,0.87);
     -webkit-box-shadow: 1px 7px 23px -5px rgba(61,61,61,0.87);
-    -moz-box-shadow: 1px 7px 23px -5px rgba(61,61,61,0.87);
-    
+    -moz-box-shadow: 1px 7px 23px -5px rgba(61,61,61,0.87);   
     background: linear-gradient(356deg,rgba(168, 120, 224, 1) 0%,rgba(255, 121, 218, 1) 100%);
-
 }
 
 .menu .link--button{
@@ -21,13 +17,12 @@
 }
 
 .link--spanText{
-        font-size: 14px;
-        font-weight: 400 ;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-
 @media screen and (min-width:768px){
-    
+
     .link--button{
         border-radius: 50px;
         padding: 20px;        
@@ -44,16 +39,14 @@
     .link--spanText{
         font-size: 20px;
         white-space: nowrap;
-        
     }
 }
 
-
 @media screen and (min-width: 992px){
-    
     .link--button{
         border-radius: 100px;      
     }
+
     .presentation .link--button{
         width: 360px;
     }
@@ -61,9 +54,9 @@
     .menu .link--button{
         width: 300px;
     }
+
     .link--spanText{
         font-size: 26px;
     } 
-
 }
 

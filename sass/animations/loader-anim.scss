@@ -8,7 +8,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     animation: zindex 1500ms ;
     animation-fill-mode: forwards;
 }
@@ -34,6 +33,7 @@
     0% {
         transform: scaleX(0);
     }
+    
     100% {
         transform: scale(1);
         display: none;
@@ -50,26 +50,6 @@
         z-index: -1;
         opacity: 0;
         display: none;
-        
-    }
-}
-
-// Animation de main de la page d'accueil pour supprimer la barre de défilement
-
-.displayNone{ 
-
-    animation: displayNone 1500ms ;
-    animation-fill-mode: forwards;
-}
-
-@keyframes displayNone{
-    99%{
-        
-    }
-
-    
-    100% {
-    
         
     }
 }

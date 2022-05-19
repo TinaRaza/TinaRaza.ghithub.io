@@ -2,7 +2,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 4%;
 }
 
@@ -19,6 +18,7 @@ header{
     header{
         padding:2% 4%;
     }
+    
     .header--logo{
         width: 240px;
     }
@@ -34,11 +34,12 @@ header{
         -webkit-box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) ;
         -moz-box-shadow: 1px 12px 6px -11px rgba(122,122,122,0.51) ;
     }
+
     .header--logo{
         width: 280px;
     }
 
-        .linkHomepage--icon{
-            font-size: 40px;
-        }
+    .linkHomepage--icon{
+        font-size: 40px;
+    }
 }

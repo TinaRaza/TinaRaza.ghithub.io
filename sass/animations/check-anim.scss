@@ -29,16 +29,13 @@
     color: #99E2D0;
     font-weight: bolder;
     background-color: white;
-    border-radius: 20px;
-    
+    border-radius: 20px;    
     transform: rotate(0turn);
     transition: transform 400ms linear;
     
 }
 
 @media screen and (min-width:768px){
-
-    
     .dishCard{
         &:hover > .dishCard--check{
             width: 95px;

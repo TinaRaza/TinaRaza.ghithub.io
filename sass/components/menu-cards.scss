@@ -7,14 +7,13 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-
     box-shadow: 1px 10px 16px -2px rgba(184,184,184,0.39);
     -webkit-box-shadow: 1px 10px 16px -2px rgba(184,184,184,0.39);
     -moz-box-shadow: 1px 10px 16px -2px rgba(184,184,184,0.39);
 
-        &:hover > .dishCard--detailContainer, .dishCard--name {
-            width: calc(78%)
-        }
+    &:hover > .dishCard--detailContainer, .dishCard--name {
+        width: calc(78%)
+    }
 }
 
 .dishCard--detailContainer{
@@ -22,7 +21,6 @@
     padding: 0 20px 0 15px; 
 
     transition: width 340ms linear;
-
 }
 
 .dishCard--name{
@@ -41,7 +39,6 @@
 } 
 
 .dishCard--caption, .dishCard--name{
-    
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -55,10 +52,7 @@
     margin-left: 10px;
 }
 
-
-
 @media screen and (min-width:768px){
-
     .dishCard{
         height: 80px;
     }
@@ -70,9 +64,7 @@
 
     .dishCard--detail{
         font-size: 16px;
-
     }
-
 }
 
 @media screen and (min-width:992px){

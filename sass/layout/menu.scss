@@ -1,7 +1,6 @@
 .menu{
     position: relative;
     bottom: 70px;
-
     padding: 8% 4% 0 4%;
 }
 
@@ -34,10 +33,10 @@
     }
 
 @media screen and (min-width: 768px){
-
     .dishlist{
         margin-bottom: 45px;
     }
+
     .dishlist--dishCard{
         display: flex;
         flex-wrap: wrap;
@@ -52,11 +51,9 @@
     .dishCard{
         width: 48%;
     }
-
 }
 
 @media screen and (min-width: 992px){
-    
     .menu--main{
         max-width: 1200px;
         margin: auto;
