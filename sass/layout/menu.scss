@@ -9,20 +9,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 7%;
     padding-right: 20px;
 }
 
 .dishlist{
     margin-bottom: 50px;
 }
-.dishlist--dishCard{
-    margin-bottom: 10%;
+
+.dishlist--li, .menu--heading {
+    margin-bottom: 36px; 
 }
 
-
-.dishlist--li, .dishlist--heading {
-    margin-bottom: 5%; 
+.dishlist--heading{
+    margin-bottom: 20px; 
+    margin-left: 10px;
 }
 
 .dishCard{
@@ -36,7 +36,7 @@
 @media screen and (min-width: 768px){
 
     .dishlist{
-        margin-bottom: 10%;
+        margin-bottom: 45px;
     }
     .dishlist--dishCard{
         display: flex;
@@ -46,6 +46,7 @@
 
     .dishlist--heading{
         width: 100%;
+        margin-bottom: 27px;
     }
 
     .dishCard{

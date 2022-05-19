@@ -1,21 +1,22 @@
-.dishlist--article{
+.dishlist--dishCard{
     position: relative;
-    animation: slidebottom 5s ease-in-out;
+    
 }
 
 @keyframes slidebottom { 
-    from{ bottom:0px; opacity:0; } 
-    to{ bottom:-200px; opacity:1; }
+    from{ bottom:-200px; opacity:0; } 
+    to{ bottom:0px; opacity:1; }
 }
 
 .delay1{
-    animation:slidebottom 1s;
+    animation: slidebottom 2s ;
 }
 
+
 .delay2{
-    animation: slidebottom 2s;
+    animation: slidebottom 3s  ;
 }
 
 .delay3{
-    animation:slidebottom 4s;
+    animation: slidebottom 3.5s ;
 }

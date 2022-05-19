@@ -468,31 +468,30 @@ input::placeholder {
     font-size: 22px;
   }
 }
-.dishlist--article {
+.dishlist--dishCard {
   position: relative;
-  animation: slidebottom 5s ease-in-out;
 }
 
 @keyframes slidebottom {
   from {
-    bottom: 0px;
+    bottom: -200px;
     opacity: 0;
   }
   to {
-    bottom: -200px;
+    bottom: 0px;
     opacity: 1;
   }
 }
 .delay1 {
-  animation: slidebottom 1s;
-}
-
-.delay2 {
   animation: slidebottom 2s;
 }
 
+.delay2 {
+  animation: slidebottom 3s;
+}
+
 .delay3 {
-  animation: slidebottom 4s;
+  animation: slidebottom 3.5s;
 }
 
 .menu--likeBtn, .cardCaption--likeBtn {
@@ -505,7 +504,7 @@ input::placeholder {
   position: relative;
   transform: scale(1);
   opacity: 1;
-  transition: all 600ms 200ms;
+  transition: all 600ms 150ms;
 }
 .scale1:hover {
   opacity: 0;
@@ -894,7 +893,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 7%;
   padding-right: 20px;
 }
 
@@ -902,12 +900,13 @@ footer {
   margin-bottom: 50px;
 }
 
-.dishlist--dishCard {
-  margin-bottom: 10%;
+.dishlist--li, .menu--heading {
+  margin-bottom: 36px;
 }
 
-.dishlist--li, .dishlist--heading {
-  margin-bottom: 5%;
+.dishlist--heading {
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .dishCard {
@@ -920,7 +919,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .dishlist {
-    margin-bottom: 10%;
+    margin-bottom: 45px;
   }
 
   .dishlist--dishCard {
@@ -931,6 +930,7 @@ footer {
 
   .dishlist--heading {
     width: 100%;
+    margin-bottom: 27px;
   }
 
   .dishCard {
@@ -1011,7 +1011,7 @@ h1.presentation--title, h2.homepage--heading {
 .dishlist--heading::after {
   content: "__";
   position: absolute;
-  bottom: -13px;
+  bottom: -15px;
   left: 0;
   font-size: 40px;
   font-weight: 400;
@@ -1037,7 +1037,7 @@ h1.presentation--title, h2.homepage--heading {
   .dishlist--heading::after {
     content: "__";
     font-size: 50px;
-    bottom: -25px;
+    bottom: -16px;
   }
 }
 @media screen and (min-width: 992px) {

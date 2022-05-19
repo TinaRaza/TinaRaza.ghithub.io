@@ -25,7 +25,7 @@
         &::after{
             content: "__";  
             position: absolute;
-            bottom:-13px;
+            bottom:-15px;
             left: 0;       
             font-size: 40px;
             font-weight: 400;
@@ -52,7 +52,7 @@
         &::after{
             content: "__";  
             font-size: 50px;
-            bottom:-25px;
+            bottom:-16px;
         }
     }
 }

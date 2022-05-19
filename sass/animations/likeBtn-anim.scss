@@ -12,19 +12,19 @@
     flex-direction: column;
 }
 
+
 .scale1{
     z-index: 1;
     position: relative;
     transform: scale(1);
     opacity: 1;
-    transition: all 600ms 200ms ;
+    transition: all 600ms 150ms ;
     
     &:hover{
         opacity: 0;
 
         & + .scale0{
             transform: scale(1);
-
         }
     }
 } 
