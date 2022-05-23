@@ -3,18 +3,18 @@
 }
 
 @keyframes slidebottom { 
-    from{ bottom:-200px; opacity:0; } 
+    from{ bottom:-50px; opacity:0; } 
     to{ bottom:0px; opacity:1; }
 }
 
 .delay1{
-    animation: slidebottom 2s ;
+    animation: slidebottom 0.4s ease-out;
 }
 
 .delay2{
-    animation: slidebottom 3s  ;
+    animation: slidebottom 0.8s ease-out ;
 }
 
 .delay3{
-    animation: slidebottom 3.5s ;
+    animation: slidebottom 1.2s ease-out;
 }

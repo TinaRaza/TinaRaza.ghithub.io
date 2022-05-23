@@ -18,7 +18,7 @@
     height: 100%;
     width: 0;
     overflow: hidden;
-    transition: all 400ms linear;
+    transition: all 200ms linear;
 }
 
 .fa-check{
@@ -31,14 +31,14 @@
     background-color: white;
     border-radius: 20px;    
     transform: rotate(0turn);
-    transition: transform 400ms linear;
+    transition: transform 200ms linear;
     
 }
 
 @media screen and (min-width:768px){
     .dishCard{
         &:hover > .dishCard--check{
-            width: 95px;
+            padding: 0 30px;
         }
     }
 }
@@ -46,7 +46,7 @@
 @media screen and (min-width:992px){
     .dishCard{
         &:hover > .dishCard--check{
-            width: 100px;
+            padding: 0 35px;
         }
     }
 }
