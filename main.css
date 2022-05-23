@@ -545,9 +545,6 @@ input::placeholder {
   transition: transform 600ms;
 }
 
-.link--button {
-  transform: background 1s, box-shadow 1s;
-}
 .link--button:hover {
   background: linear-gradient(356deg, #b483e5 0%, #fface8 100%);
   box-shadow: 5px 16px 18px -3px rgba(133, 129, 129, 0.711);
