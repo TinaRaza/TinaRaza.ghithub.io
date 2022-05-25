@@ -5,6 +5,7 @@
         padding: 0 25px;
         & > .fa-check{
             transform: rotate(1turn);
+            transition: transform 200ms linear;
         }
     }
 }
@@ -31,8 +32,6 @@
     background-color: white;
     border-radius: 20px;    
     transform: rotate(0turn);
-    transition: transform 200ms linear;
-    
 }
 
 @media screen and (min-width:768px){
